@@ -1,14 +1,17 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '@/contexts/AuthContext';
 import SearchBar from '@/components/SearchBar';
 import CategoryCard from '@/components/CategoryCard';
 import ProductCard from '@/components/ProductCard';
 import HeroBanner from '@/components/HeroBanner';
 import BottomNavigation from '@/components/BottomNavigation';
+import logo from '@/assets/logo.png';
 import { categories, getFeaturedProducts, getNewArrivals, products } from '@/data/products';
 
 const Index = () => {
   const [searchQuery, setSearchQuery] = useState('');
+  const { user } = useAuth();
   const featuredProducts = getFeaturedProducts();
   const newArrivals = getNewArrivals();
 
@@ -24,14 +27,19 @@ const Index = () => {
       {/* Header */}
       <header className="px-4 pt-6 pb-4 bg-card">
         <div className="flex items-start justify-between mb-4">
-          <div>
-            <h1 className="text-xl font-bold text-foreground">Welcome to</h1>
-            <p className="text-lg font-semibold text-primary">New Onetouch Automation</p>
-            <p className="text-sm text-muted-foreground">Industrial Machinery Solutions</p>
-          </div>
-          <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-bold text-sm">NTA</span>
-          </div>
+          <img src={logo} alt="New Onetouch Food Machines" className="h-12" />
+          {user ? (
+            <Link to="/profile" className="text-sm font-medium text-primary hover:underline">
+              Profile
+            </Link>
+          ) : (
+            <Link
+              to="/auth"
+              className="bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
+            >
+              Sign Up
+            </Link>
+          )}
         </div>
         <SearchBar value={searchQuery} onChange={setSearchQuery} />
       </header>
