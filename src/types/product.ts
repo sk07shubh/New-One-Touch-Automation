@@ -3,11 +3,12 @@ export interface ProductVariant {
   name: string;
   modelNo: string;
   price: number;
-  size: string;
-  weight: string;
-  bodyMaterial: string;
-  capacity: string;
-  motor: string;
+  mrp?: number;
+  size?: string;
+  weight?: string;
+  bodyMaterial?: string;
+  capacity?: string;
+  motor?: string;
   drumSize?: string;
   gstPercent: number;
   description: string;

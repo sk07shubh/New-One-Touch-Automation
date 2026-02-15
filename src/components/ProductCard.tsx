@@ -60,9 +60,13 @@ const ProductCard = ({ product, showVariantSelector = false }: ProductCardProps)
         <h3 className="font-medium text-foreground text-sm leading-tight line-clamp-2 mb-2 min-h-[40px]">
           {product.name}
         </h3>
-        <p className="text-sm font-semibold text-foreground">
-          {priceDisplay} <span className="text-muted-foreground font-normal">{gstText}</span>
-        </p>
+        <div className="flex items-baseline gap-2">
+          <p className="text-sm font-semibold text-foreground">{priceDisplay}</p>
+          {defaultVariant.mrp && defaultVariant.mrp > defaultVariant.price && (
+            <p className="text-xs text-muted-foreground line-through">₹{defaultVariant.mrp.toLocaleString('en-IN')}</p>
+          )}
+        </div>
+        <p className="text-xs text-muted-foreground">{gstText}</p>
         <div className="flex items-center gap-2 mt-3">
           <div className="flex items-center gap-1">
             <button

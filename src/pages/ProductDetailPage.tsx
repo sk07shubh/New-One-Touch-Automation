@@ -169,11 +169,14 @@ const ProductDetailPage = () => {
           </div>
 
           {/* Price */}
-          <div>
+          <div className="flex items-baseline gap-2 flex-wrap">
             <span className="price-display">
               ₹{selectedVariant.price.toLocaleString('en-IN')}
             </span>
-            <span className="gst-text ml-2">GST: {selectedVariant.gstPercent}%</span>
+            {selectedVariant.mrp && selectedVariant.mrp > selectedVariant.price && (
+              <span className="text-muted-foreground line-through text-sm">₹{selectedVariant.mrp.toLocaleString('en-IN')}</span>
+            )}
+            <span className="gst-text">GST: {selectedVariant.gstPercent}%</span>
           </div>
 
           {/* Quantity and Demo Video */}
@@ -216,7 +219,7 @@ const ProductDetailPage = () => {
                         : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
                     }`}
                   >
-                    {variant.capacity || variant.drumSize || variant.size}
+                    {variant.capacity || variant.drumSize || variant.size || variant.name}
                   </button>
                 ))}
               </div>
