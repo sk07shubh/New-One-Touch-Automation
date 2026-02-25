@@ -59,7 +59,8 @@ export const categories: Category[] = [
 ];
 
 export const products: Product[] = [
-  // Atta Mixing Machine
+  // ===== ATTA MIXING MACHINES =====
+  // Domestic Atta Mixing Machine (RAM series)
   {
     id: 'atta-mixing-1',
     name: 'Domestic Atta Mixing Machine',
@@ -77,123 +78,193 @@ export const products: Product[] = [
       { id: 'ram-05', name: '20 KG Domestic Atta Mixing Machine', modelNo: 'RAM-05', price: 14500, weight: '35 kg', bodyMaterial: 'SS Body', motor: '1 hp', gstPercent: 18, description: '20 KG capacity domestic atta mixer' },
     ],
   },
-  // Masala Mixing Machine
+  // 2 KG Domestic Atta Mixing Machine (DAM - Fully SS, Helical Gear)
+  {
+    id: 'atta-mixing-dam',
+    name: '2 KG Domestic Atta Mixing Machine',
+    slug: '2kg-domestic-atta-mixing-machine',
+    categoryId: 'atta-mixing',
+    description: 'Fully S.S. Body, Maintenance-Free, Helical Gear System, Noise Less.',
+    image: flourMixer,
+    basePrice: 6000,
+    variants: [
+      { id: 'dam-01', name: '2 KG Domestic Atta Mixing Machine', modelNo: 'DAM-01', price: 6000, weight: '11 kg', bodyMaterial: 'SS Body', size: '12\' X 14\' X 19\'', capacity: '0.3 KG TO 2 KG APX / 10 MIN', motor: '0.25 H.P.', gstPercent: 18, description: 'Fully S.S. Body, Maintenance-Free, Helical Gear System, Noise Less', features: ['Fully S.S. Body', 'Maintenance-Free', 'Helical Gear System', 'Noise Less'] },
+    ],
+  },
+  // Atta Mixing Machine Premium (AMP series)
+  {
+    id: 'atta-mixing-premium',
+    name: 'Atta Mixing Machine Premium',
+    slug: 'atta-mixing-machine-premium',
+    categoryId: 'atta-mixing',
+    description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design.',
+    image: flourMixer,
+    basePrice: 11100,
+    isFeatured: true,
+    variants: [
+      { id: 'amp-01', name: '5 KG Atta Mixing Machine Premium', modelNo: 'AMP-01', price: 11100, weight: '46 kg', bodyMaterial: 'Ms Body', size: '30\' X 16\' X 25\'', capacity: '5 KG / 10 MIN', motor: '0.75 HP', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
+      { id: 'amp-02', name: '10 KG Atta Mixing Machine Premium', modelNo: 'AMP-02', price: 20100, weight: '65 kg', bodyMaterial: 'Ms Body', size: '36\' X 21\' X 35\'', capacity: '10 KG / 10 MIN', motor: '1.5 H.P.', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
+      { id: 'amp-03', name: '15 KG Atta Mixing Machine Premium', modelNo: 'AMP-03', price: 20600, weight: '67 kg', bodyMaterial: 'Ms Body', size: '36\' X 21\' X 35\'', capacity: '15 KG / 10 MIN', motor: '1.5 H.P.', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
+      { id: 'amp-04', name: '20 KG Atta Mixing Machine Premium', modelNo: 'AMP-04', price: 27300, weight: '105 kg', bodyMaterial: 'Ms Body', size: '46\' X 41\' X 26\'', capacity: '20 KG / 15 MIN', motor: '2 H.P.', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
+      { id: 'amp-05', name: '25 KG Atta Mixing Machine Premium', modelNo: 'AMP-05', price: 27900, weight: '135 kg', bodyMaterial: 'Ms Body', size: '48\' X 42\' X 28\'', capacity: '20 KG / 15 MIN', motor: '2 H.P.', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
+    ],
+  },
+  // Atta Mixing Machine Drum Type S.S. (AMDS series)
+  {
+    id: 'atta-mixing-drum-ss',
+    name: 'Atta Mixing Machine Drum Type S.S.',
+    slug: 'atta-mixing-machine-drum-type-ss',
+    categoryId: 'atta-mixing',
+    description: 'Maintenance Free Helical Gear System, Fully S.S Body, Tilting Drum System.',
+    image: flourMixer,
+    basePrice: 12100,
+    isNewArrival: true,
+    variants: [
+      { id: 'amds-01', name: '5 KG Atta Mixing Machine Drum Type S.S.', modelNo: 'AMDS-01', price: 12100, weight: '23 kg', bodyMaterial: 'SS Body', size: '25\' X 11\' X 21\'', capacity: '5 KG', motor: '0.5 H.P.', gstPercent: 18, description: 'Maintenance Free Helical Gear System, Fully S.S Body, Tilting Drum System', features: ['Maintenance Free Helical Gear System', 'Fully S.S Body', 'Tilting Drum System'] },
+      { id: 'amds-02', name: '10 KG Atta Mixing Machine Drum Type S.S.', modelNo: 'AMDS-02', price: 18100, weight: '40 kg', bodyMaterial: 'SS Body', size: '28\' X 15\' X 31\'', capacity: '10 KG', motor: '1 H.P.', gstPercent: 18, description: 'Maintenance Free Helical Gear System, Fully S.S Body, Tilting Drum System', features: ['Maintenance Free Helical Gear System', 'Fully S.S Body', 'Tilting Drum System'] },
+      { id: 'amds-03', name: '15 KG Atta Mixing Machine Drum Type S.S.', modelNo: 'AMDS-03', price: 21100, weight: '52 kg', bodyMaterial: 'SS Body', size: '31\' X 15\' X 35\'', capacity: '15 KG', motor: '1.5 H.P.', gstPercent: 18, description: 'Maintenance Free Helical Gear System, Fully S.S Body, Tilting Drum System', features: ['Maintenance Free Helical Gear System', 'Fully S.S Body', 'Tilting Drum System'] },
+    ],
+  },
+  // Atta Mixing Machine Premium S.S. Bowl Type (AMPS series)
+  {
+    id: 'atta-mixing-premium-ss-bowl',
+    name: 'Atta Mixing Machine Premium S.S. (Bowl Type)',
+    slug: 'atta-mixing-machine-premium-ss-bowl-type',
+    categoryId: 'atta-mixing',
+    description: 'Premium S.S. Body Atta Mixing Machine with Bowl Type design.',
+    image: flourMixer,
+    basePrice: 12100,
+    variants: [
+      { id: 'amps-01', name: '5 kg Atta Mixing Machine Premium S.S. (Bowl Type)', modelNo: 'AMPS-01', price: 12100, weight: '46 kg', bodyMaterial: 'SS BODY', size: '30\'x16\'x25\'', capacity: '5 kg / 10 Min', motor: '0.75 hp', gstPercent: 18, description: 'Premium SS Bowl Type atta mixer' },
+      { id: 'amps-02', name: '10 kg Atta Mixing Machine Premium S.S. (Bowl Type)', modelNo: 'AMPS-02', price: 21600, weight: '65 kg', bodyMaterial: 'SS BODY', size: '36\'x21\'x35\'', capacity: '10 kg / 10 Min', motor: '1.5 hp', gstPercent: 18, description: 'Premium SS Bowl Type atta mixer' },
+      { id: 'amps-03', name: '15 kg Atta Mixing Machine Premium S.S. (Bowl Type)', modelNo: 'AMPS-03', price: 22100, weight: '67 kg', bodyMaterial: 'SS BODY', size: '36\'x21\'x35\'', capacity: '15 kg / 15 Min', motor: '1.5 hp', gstPercent: 18, description: 'Premium SS Bowl Type atta mixer' },
+    ],
+  },
+
+  // ===== MASALA MIXING MACHINE =====
   {
     id: 'masala-mixing-1',
     name: 'Namkeen Masala Mixing Machine',
     slug: 'namkeen-masala-mixing-machine',
     categoryId: 'masala-mixing',
-    description: 'Namkeen Masala Mixer used for mixing different spices, powder, fryms, namkeen, pickles, etc.',
+    description: 'Namkeen Masala Mixer used to mixing different of spices, powder, fryms, namkeen, pickels, etc. available in 1.5 to 5 feet.',
     image: namkeenMixer,
-    basePrice: 22150,
+    basePrice: 20050,
     isFeatured: true,
     variants: [
-      { id: 'dmm-03', name: 'Namkeen Masala Mixing Machine 1.5 feet', modelNo: 'DMM-03', price: 29050, motor: '1 hp', gstPercent: 18, description: '1.5 feet masala mixing machine' },
-      { id: 'nmm-02', name: 'Namkeen Masala Mixing Machine 2 feet', modelNo: 'NMM-02', price: 22150, bodyMaterial: 'SS Body', gstPercent: 18, description: '2 feet masala mixing machine' },
-      { id: 'nmm-03', name: 'Namkeen Masala Mixing Machine 3 feet', modelNo: 'NMM-03', price: 48000, mrp: 52000, bodyMaterial: 'SS Body', gstPercent: 18, description: '3 feet masala mixing machine' },
-      { id: 'nmm-01', name: 'Namkeen Masala Mixing Machine 5 feet', modelNo: 'NMM-01', price: 60000, mrp: 85000, bodyMaterial: 'SS Body', gstPercent: 18, description: '5 feet masala mixing machine' },
+      { id: 'nmm-01', name: 'Namkeen Masala Mixing Machine 1.5 feet', modelNo: 'NMM-01', price: 20050, weight: '50 kg', bodyMaterial: 'SS Body', size: '36 X 27 X 16', capacity: '8 - 10 KG (one time)', motor: '0.5 H.P.', drumSize: '1.5 Feet(Steel Body)', gstPercent: 18, description: 'Namkeen Masala Mixer used to mixing different of spices, powder, fryms, namkeen, pickels, etc. available in 1.5 to 5 feet.' },
+      { id: 'nmm-02', name: 'Namkeen Masala Mixing Machine 2 feet', modelNo: 'NMM-02', price: 22150, weight: '64 kg', bodyMaterial: 'SS Body', size: '38 X 27 X 18', capacity: '15 - 20 KG (one time)', motor: '0.5 H.P.', drumSize: '2 Feet(Steel Body)', gstPercent: 18, description: 'Namkeen Masala Mixer used to mixing different of spices, powder, fryms, namkeen, pickels, etc. available in 1.5 to 5 feet.' },
+      { id: 'nmm-03', name: 'Namkeen Masala Mixing Machine 3 feet', modelNo: 'NMM-03', price: 48000, mrp: 52000, weight: '155 kg', bodyMaterial: 'SS Body', size: '65 X 45 X 27', capacity: '40 - 50 KG (one time)', motor: '1.5 hp', drumSize: '3 Feet(Steel Body)', gstPercent: 18, description: 'Namkeen Masala Mixer used to mixing different of spices, powder, fryms, namkeen, pickels, etc. available in 1.5 to 5 feet.' },
+      { id: 'nmm-04', name: 'Namkeen Masala Mixing Machine 5 feet', modelNo: 'NMM-04', price: 61000, mrp: 85000, weight: '195 kg', bodyMaterial: 'SS Body', size: '85 X 45 X 29', capacity: '80 - 100 KG ( one time)', motor: '2 hp', drumSize: '5 Feet(Steel Body)', gstPercent: 18, description: 'Namkeen Masala Mixer used to mixing different of spices, powder, fryms, namkeen, pickels, etc. available in 1.5 to 5 feet.' },
     ],
   },
-  // Besan Mixing Machine
+
+  // ===== BESAN MIXING MACHINE =====
   {
     id: 'besan-mixing-1',
     name: 'Besan Mixing Machine',
     slug: 'besan-mixing-machine',
     categoryId: 'besan-mixing',
-    description: 'Commercial besan mixing machine for making perfect batter for pakoras, sweets and more.',
+    description: 'The Besan Mixing Machine is used to evenly mix the water and the batter or gram flour powder. Batter powder. Besan mixer is used in the namkeen factory, catering company, and small namkeen shops.',
     image: besanMixer,
-    basePrice: 22000,
+    basePrice: 22900,
     variants: [
-      { id: 'irem-dt', name: '10 kg Besan Mixing Machine', modelNo: 'IREM DT', price: 22000, mrp: 25000, bodyMaterial: 'SS Body', gstPercent: 18, description: '10 kg capacity besan mixer' },
-      { id: 'rm-02', name: '15 Kg Besan Mixing Machine', modelNo: 'RM-02', price: 23950, mrp: 45000, bodyMaterial: 'SS Body', gstPercent: 18, description: '15 Kg capacity besan mixer' },
-      { id: 'bmm-03', name: '20 Kg Besan Mixing Machine', modelNo: '884.03', price: 28450, mrp: 30000, bodyMaterial: 'SS Body', gstPercent: 18, description: '20 Kg capacity besan mixer' },
+      { id: 'bm-01', name: '10 kg Besan Mixing Machine', modelNo: 'BM-01', price: 22900, mrp: 25000, weight: '84 kg', bodyMaterial: 'SS Body', size: '29 x 37 x 20', capacity: '10kg/10min', motor: '1 hp', gstPercent: 18, description: 'The Besan Mixing Machine is used to evenly mix the water and the batter or gram flour powder, applied in diluted batter powder. Besan mixer is used in the namkeen factory, catering company, and small namkeen shops.' },
+      { id: 'bm-02', name: '15 kg Besan Mixing Machine', modelNo: 'BM-02', price: 23950, mrp: 45000, weight: '88 kg', bodyMaterial: 'SS Body', size: '32 x 38 x 20', capacity: '15kg/10min', motor: '1 hp', gstPercent: 18, description: 'The Besan Mixing Machine is used to evenly mix the water and the batter or gram flour powder, applied in diluted batter powder. Besan mixer is used in the namkeen factory, catering company, and small namkeen shops.' },
+      { id: 'bm-03', name: '20 Kg Besan Mixing Machine', modelNo: 'BM-03', price: 28450, mrp: 30000, weight: '100 kg', bodyMaterial: 'SS Body', size: '35 x 40 x 25', capacity: '20kg / 15 min', motor: '1.5 hp', gstPercent: 18, description: 'The Besan Mixing Machine is used to evenly mix the water and the batter or gram flour powder, applied in diluted batter powder. Besan mixer is used in the namkeen factory, catering company, and small namkeen shops.' },
     ],
   },
-  // Boondi Making Machine
+
+  // ===== BOONDI MAKING MACHINE =====
   {
     id: 'boondi-making-1',
     name: 'Boondi Making Machine',
     slug: 'boondi-making-machine',
     categoryId: 'boondi-making',
-    description: 'Automatic boondi making machine for producing uniform boondi for raita, laddoo and sweets.',
+    description: 'Big Size Boondi & Motichoor Making, Easy To Use, Fully S.S Body.',
     image: boondiMaker,
     basePrice: 52100,
     variants: [
-      { id: 'rimm-01', name: 'Boondi Making Machine', modelNo: 'RIMM-01', price: 52100, mrp: 69748, gstPercent: 18, description: 'Standard boondi making machine' },
+      { id: 'bmm-01', name: 'Boondi Making Machine', modelNo: 'BMM - 01', price: 52100, mrp: 69748, weight: '62 kg', bodyMaterial: 'SS Body', size: '38\' X 23\' X 43\'', capacity: '100 - 120 LTR PR HR', motor: '1 HP (Speed Controller)', gstPercent: 18, description: 'Big Size Boondi & Motichoor Making, Easy To Use, Fully S.S Body', features: ['Big Size Boondi & Motichoor Making', 'Easy To Use', 'Fully S.S Body'] },
     ],
   },
-  // Chapati Bhatthi
+
+  // ===== CHAPATI BHATTHI =====
   {
     id: 'chapati-bhatthi-1',
     name: 'SS Chapati Bhatthi',
     slug: 'ss-chapati-bhatthi',
     categoryId: 'chapati-bhatthi',
-    description: 'Stainless steel chapati bhatthi (tandoor) for perfect rotis and naans with consistent heat distribution.',
+    description: 'Chapati Tawa bhatti for kitchen hotel is made of SS body material and non stick coating of Tawa cast iron is best for health and its budget friendly.',
     image: chapatiBhatti,
     basePrice: 7350,
     variants: [
-      { id: 'cb-105', name: 'SS Chapati Bhatti (30X15X4)', modelNo: 'CB-105', price: 7350, bodyMaterial: 'SS', gstPercent: 18, description: 'Compact chapati bhatti' },
-      { id: 'cb-101', name: 'SS Chapati Bhatthi (18 x 36 x 12)', modelNo: 'CB-101', price: 11550, bodyMaterial: 'SS', gstPercent: 18, description: '18 x 36 x 12 size chapati bhatthi' },
-      { id: 'cb-102', name: 'SS Chapati Bhatthi (18 x 36 x 32)', modelNo: 'CB-102', price: 13250, bodyMaterial: 'SS', gstPercent: 18, description: '18 x 36 x 32 size chapati bhatthi' },
-      { id: 'ch-103', name: 'SS Chapati Bhatthi (24 x 48 x 12)', modelNo: 'CH-103', price: 17100, bodyMaterial: 'SS', gstPercent: 18, description: '24 x 48 x 12 size chapati bhatthi' },
-      { id: 'cb-104', name: 'SS Chapati Bhatthi (24 x 48 x 32)', modelNo: 'CB-104', price: 19400, bodyMaterial: 'SS', gstPercent: 18, description: '24 x 48 x 32 size chapati bhatthi' },
+      { id: 'cb-105', name: 'SS Chapati bhathi (30X15X14)', modelNo: 'CB - 105', price: 7350, weight: '25 kg', bodyMaterial: 'SS BODY', gstPercent: 18, description: 'Chapati Tawa bhatti for kitchen hotel is made of SS body material and non stick coating of Tawa cast iron is best for health and its budget friendly' },
+      { id: 'cb-101', name: 'SS Chapati Bhatthi (18 x 36 x 12)', modelNo: 'CB-101', price: 11550, weight: '42 kg', bodyMaterial: 'SS Body', size: '18 x 36 x 12', gstPercent: 18, description: 'Chapati Tawa bhatti for kitchen hotel is made of SS body material and non stick coating of Tawa cast iron is best for health and its budget friendly' },
+      { id: 'cb-102', name: 'SS Chapati Bhatthi (18 x 36 x 32)', modelNo: 'CB-102', price: 13250, weight: '50 kg', bodyMaterial: 'SS Body', size: '18 x 36 x 32', gstPercent: 18, description: 'Chapati Tawa bhatti for kitchen hotel is made of SS body material and non stick coating of Tawa cast iron is best for health and its budget friendly' },
+      { id: 'cb-103', name: 'SS Chapati Bhatthi (24 x 48 x 12)', modelNo: 'CB-103', price: 17100, weight: '77 kg', bodyMaterial: 'SS Body', size: '24 x 48 x 12', gstPercent: 18, description: 'Chapati Tawa bhatti for kitchen hotel is made of SS body material and non stick coating of Tawa cast iron is best for health and its budget friendly' },
+      { id: 'cb-104', name: 'SS Chapati Bhatthi (24 x 48 x 32)', modelNo: 'CB-104', price: 19400, weight: '90 kg', bodyMaterial: 'SS Body', size: '24 x 48 x 32', gstPercent: 18, description: 'Chapati Tawa bhatti for kitchen hotel is made of SS body material and non stick coating of Tawa cast iron is best for health and its budget friendly' },
     ],
   },
-  // Dough Ball Machine
+
+  // ===== DOUGH BALL MACHINE =====
   {
     id: 'dough-ball-1',
     name: 'Dough Ball Machine',
     slug: 'dough-ball-machine',
     categoryId: 'dough-ball',
-    description: 'Commercial dough ball machine available in single worm, double worm, and blade type models.',
+    description: 'The machine is easy-to-operate and clean and can be customized to control the size of dough balls as per the requirement.',
     image: doughBall,
     basePrice: 34000,
     isFeatured: true,
     variants: [
-      { id: 'dbm-05', name: 'Dough Ball Machine - Blade Type (New Model)', modelNo: 'DBM-05', price: 34000, weight: '50 kg', bodyMaterial: 'SS Body', size: '25 x 17 x 26', motor: '0.75 hp', gstPercent: 18, description: 'Blade type dough ball machine - new model' },
-      { id: 'db-01', name: 'Dough Ball Machine (Single Worm Type)', modelNo: 'DB-01', price: 35000, mrp: 38115, weight: '63 kg', bodyMaterial: 'SS Body', size: '30 x 36 x 35 inches', motor: '0.75 hp', gstPercent: 18, description: 'Single worm type dough ball machine' },
-      { id: 'db-02', name: 'Dough Ball Machine (Double Worm Type)', modelNo: 'DB-02', price: 45000, weight: '93 kg', bodyMaterial: 'SS Body', size: '38 x 22 x 38 mm', motor: '1 hp', gstPercent: 18, description: 'Double worm type dough ball machine' },
-      { id: 'db-03', name: 'Dough Ball and Dough Kneading 2 in 1 Machine', modelNo: 'DB-03', price: 45000, weight: '55.30 kg', bodyMaterial: 'SS Body', size: '45.5 x 39 x 33', motor: '1.5 hp', gstPercent: 18, description: '2 in 1 dough ball and kneading machine' },
-      { id: 'dbkort-01', name: 'Dough Ball And Dough Kneading 2 IN 1 Machine Blade Type', modelNo: 'DBKORT-01', price: 45000, motor: '1.5 hp', gstPercent: 18, description: '2 in 1 blade type dough ball and kneading machine' },
+      { id: 'dbm-05', name: 'DOUGH BALL MACHINE BLADE TYPE (NEW MODEL)', modelNo: 'DBM-05', price: 34000, weight: '56 kg', bodyMaterial: 'SS Body', size: '25 X 17 X 26', capacity: '1500 To 2000 Pr hr', motor: '0.75 hp + 120w', gstPercent: 18, description: 'Blade type dough ball machine - new model' },
+      { id: 'db-01', name: 'Dough Ball Machine (Single Worm Type)', modelNo: 'DB-01', price: 35000, mrp: 38115, weight: '63 kg', bodyMaterial: 'SS Body', size: '30 x 16 x 35', capacity: '2000 TO 2500', motor: '0.75hp', gstPercent: 18, description: 'The machine is easy-to-operate and clean and can be customized to control the size of dough balls as per the requirement.' },
+      { id: 'db-02', name: 'Dough Ball Machine (Double Worm Type)', modelNo: 'DB-02', price: 45000, weight: '93 kg', bodyMaterial: 'SS Body', size: '38 x 22 x 38', capacity: '2500 TO 6000', motor: '1 hp', gstPercent: 18, description: 'The machine is easy-to-operate and clean and can be customized to control the size of dough balls as per the requirement.' },
+      { id: 'db-03', name: 'Dough Ball and Dough Kneading 2 In 1 Machine', modelNo: 'DB-03', price: 45000, weight: '81 kg', bodyMaterial: 'SS Body', size: '45 x 19 x 33', motor: '1.5 hp', gstPercent: 18, description: 'Commercial Atta Dough Kneader With Dough Ball Making / Cutting Machine used for Hotels, Restaurant and more places which evenly cuts dough as per your requirement.' },
+      { id: 'dbdkbt-01', name: 'Dough Ball And Dough Kneading 2 IN 1 Machine Blade Type', modelNo: 'DBDKBT - 01', price: 45000, motor: '1.5 hp', gstPercent: 18, description: '2 in 1 Dough Ball and Dough kneading machine Blade Type. A stainless steel 2-in-1 dough ball and dough kneading machine (blade type).' },
     ],
   },
-  // Dry Fruit Machine
+
+  // ===== DRY FRUIT MACHINE =====
   {
     id: 'dry-fruit-1',
     name: 'Dry Fruit Chips & Powder Machine',
     slug: 'dry-fruit-chips-powder-machine',
     categoryId: 'dry-fruit',
-    description: 'Dry fruit chips and powder machine for cutting and grinding dry fruits.',
+    description: 'It is used to make slice and powder from peanut, almond, cashew, Pista and other dry fruits.',
     image: dryFruit,
     basePrice: 10500,
     variants: [
-      { id: 'dfm-101', name: 'Dry Fruit Chips & Powder Machine', modelNo: 'DFM-101', price: 10500, weight: '30 kg', bodyMaterial: 'SS Body', size: '22 x 21 x 16', capacity: '25-30 KG', motor: '1 HP 960 RPM', gstPercent: 18, description: 'Standard dry fruit chips and powder machine' },
+      { id: 'dfm-101', name: 'Dry Fruit Chips & Powder Machine', modelNo: 'DFM-101', price: 10500, weight: '30 kg', bodyMaterial: 'SS Body', size: '22 x 21 x 16', capacity: '25-30 KG', motor: '1 HP 960 RPM', gstPercent: 18, description: 'It is used to make slice and powder from peanut, almond, cashew, Pista and other dry fruits.' },
     ],
   },
-  // Flour Mixing Machine
+
+  // ===== FLOUR MIXING MACHINE =====
   {
     id: 'flour-mixing-1',
     name: 'Flour Mixing Machine',
     slug: 'flour-mixing-machine',
     categoryId: 'flour-mixing',
-    description: 'Commercial flour mixing machine (atta mixer) for bakeries and food production units. Available in 2 KG to 50 KG.',
+    description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.',
     image: flourMixer,
     basePrice: 5850,
     isNewArrival: true,
     variants: [
-      { id: 'fm-01', name: '2 Kg Flour Mixing Machine', modelNo: 'FM-01', price: 5850, weight: '16 kg', bodyMaterial: 'SS Body', size: '14 x 18 x 15', capacity: '2 kg / 5 min', motor: '0.25 hp', gstPercent: 18, description: '2 Kg compact flour mixer' },
-      { id: 'fm-02', name: '5 Kg Flour Mixing Machine', modelNo: 'FM-02', price: 8400, weight: '30 kg', bodyMaterial: 'SS Body', size: '22 x 18 x 18', capacity: '5 kg/10 min', motor: '0.5 hp', gstPercent: 18, description: '5 Kg flour mixer' },
-      { id: 'fm-09', name: '5 Kg Flour Mixing Machine (MS)', modelNo: 'FM-09', price: 11100, weight: '46 kg', bodyMaterial: 'MS Powder', size: '50 x 16 x 25', capacity: '5 ltr (80 gm)', motor: '0.75 hp', gstPercent: 18, description: '5 Kg MS body flour mixer' },
-      { id: 'fm-03', name: '10 Kg Flour Mixing Machine', modelNo: 'FM-03', price: 19000, weight: '65 kg', bodyMaterial: 'MS Body', size: '36 x 21 x 35', capacity: '10 kg/10min', motor: '1.5 hp', gstPercent: 18, description: '10 Kg flour mixer' },
-      { id: 'fm-04', name: '15 Kg Flour Mixing Machine', modelNo: 'FM-04', price: 19550, weight: '67 kg', bodyMaterial: 'MS Body', size: '36 x 21 x 35', capacity: '15Kg/10 min', motor: '1.5 hp', gstPercent: 18, description: '15 Kg flour mixer' },
-      { id: 'fm-05', name: '20 Kg Flour Mixing Machine', modelNo: 'FM-05', price: 26350, weight: '105 kg', bodyMaterial: 'MS Body', size: '46 x 41 x 26', capacity: '20kg/15 min', motor: '2 hp', gstPercent: 18, description: '20 Kg flour mixer' },
-      { id: 'fm-06', name: '25 Kg Flour Mixing Machine', modelNo: 'FM-06', price: 27400, weight: '135 kg', bodyMaterial: 'MS Body', size: '48 x 42 x 28', capacity: '25kg / 15min', motor: '2 hp', gstPercent: 18, description: '25 Kg flour mixer' },
-      { id: 'fm-07', name: '30 Kg Flour Mixing Machine', modelNo: 'FM-07', price: 32100, weight: '140 kg', bodyMaterial: 'MS Body', size: '42 x 40 x 25', capacity: '30kg / 15min', motor: '2 hp', gstPercent: 18, description: '30 Kg flour mixer' },
-      { id: 'fm-08a', name: '40 Kg Flour Mixing Machine', modelNo: 'FM-08', price: 44200, weight: '158 kg', bodyMaterial: 'MS Body', size: '50 x 42 x 25', capacity: '40kg/15min', motor: '2 hp three phase', gstPercent: 18, description: '40 Kg flour mixer' },
-      { id: 'fm-08b', name: '50 Kg Flour Mixing Machine', modelNo: 'FM-08', price: 48400, weight: '165 kg', bodyMaterial: 'MS Body', size: '51 x 45 x 27', capacity: '50 kg/ 20min', motor: '2 hp three phase', gstPercent: 18, description: '50 Kg flour mixer' },
+      { id: 'fm-01', name: '2 Kg Flour Mixing Machine', modelNo: 'FM-01', price: 5850, weight: '16 kg', bodyMaterial: 'SS Body', size: '14 x 18 x 15', capacity: '2 kg / 5 min', motor: '0.25 hp', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-02', name: '5 Kg Flour Mixing Machine', modelNo: 'FM-02', price: 8400, weight: '30 kg', bodyMaterial: 'SS Body', size: '22 x 18 x 18', capacity: '5 kg/10 min', motor: '0.5 hp', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-09', name: '5 Kg Flour Mixing Machine', modelNo: 'FM-09', price: 11100, weight: '46 kg', bodyMaterial: 'MS Body', size: '30 x 16 x 25', capacity: '5kg / 10 min', motor: '0.75 hp', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-03', name: '10 Kg Flour Mixing Machine', modelNo: 'FM-03', price: 19000, weight: '65 kg', bodyMaterial: 'MS BODY', size: '36 x 21 x 35', capacity: '10 kg/10min', motor: '1.5 hp', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-04', name: '15 Kg Flour Mixing Machine', modelNo: 'FM-04', price: 19550, weight: '67 kg', bodyMaterial: 'Ms Body', size: '36 x 21 x 35', capacity: '15KG/10 min', motor: '1.5 hp', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-05', name: '20 Kg Flour Mixing Machine', modelNo: 'FM -05', price: 26350, weight: '105 kg', bodyMaterial: 'MS Body', size: '46 x 41 x 26', capacity: '20kg/15 min', motor: '2 hp', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-06', name: '25 Kg Flour Mixing Machine', modelNo: 'FM-06', price: 27400, weight: '135 kg', bodyMaterial: 'Ms Body', size: '48 x 42 x 28', capacity: '25kg / 15min', motor: '2 hp', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-07', name: '30 Kg Flour Mixing Machine', modelNo: 'FM-07', price: 32100, weight: '140 kg', bodyMaterial: 'MS Body', size: '42 x 40 x 25', capacity: '30kg /15min', motor: '2 hp', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-08a', name: '40 Kg Flour Mixing Machine', modelNo: 'FM-08', price: 44200, weight: '158 kg', bodyMaterial: 'Ms Body', size: '50 x 42 x 25', capacity: '40kg/15min', motor: '2 hp three phase', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
+      { id: 'fm-08b', name: '50 Kg Flour Mixing Machine', modelNo: 'FM-08', price: 48400, weight: '165 kg', bodyMaterial: 'Ms Body', size: '51 x 45 x 27', capacity: '50 kg/ 20min', motor: '2 hp three phase', gstPercent: 18, description: 'We are manufacturing mini to large sized dough making/ kneading machine having bowl capacity 2 kg to 50 kg, easy to handle for all kinds of dough.' },
     ],
   },
-  // Garlic Peeling Machine
+
+  // ===== GARLIC PEELING MACHINE =====
   {
     id: 'garlic-peeling-1',
     name: 'Garlic Peeling Machine',
