@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, Heart, Minus, Plus, Play } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Heart, Minus, Plus, Play, MessageCircle } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import BottomNavigation from '@/components/BottomNavigation';
 import { getProductBySlug, getCategoryBySlug, categories } from '@/data/products';
@@ -169,7 +169,7 @@ const ProductDetailPage = () => {
           </div>
 
           {/* Price */}
-          <div className="flex items-baseline gap-2 flex-wrap">
+          <div className="flex items-center gap-3 flex-wrap">
             <span className="price-display">
               ₹{selectedVariant.price.toLocaleString('en-IN')}
             </span>
@@ -177,6 +177,15 @@ const ProductDetailPage = () => {
               <span className="text-muted-foreground line-through text-sm">₹{selectedVariant.mrp.toLocaleString('en-IN')}</span>
             )}
             <span className="gst-text">GST: {selectedVariant.gstPercent}%</span>
+            <a
+              href={`https://wa.me/919922051400?text=${encodeURIComponent(`Hi, I'm interested in ${selectedVariant.name} (${selectedVariant.modelNo}) - ₹${selectedVariant.price.toLocaleString('en-IN')}`)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#20bd5a] transition-colors"
+            >
+              <MessageCircle className="w-4 h-4 fill-white" />
+              WhatsApp
+            </a>
           </div>
 
           {/* Quantity and Demo Video */}
