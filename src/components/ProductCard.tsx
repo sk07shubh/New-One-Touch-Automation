@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Minus, Plus, MessageCircle } from 'lucide-react';
+import { Heart, Minus, Plus } from 'lucide-react';
 import { Product } from '@/types/product';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 import { useCart } from '@/contexts/CartContext';
 import { toast } from 'sonner';
 
@@ -74,7 +75,7 @@ const ProductCard = ({ product, showVariantSelector = false }: ProductCardProps)
             onClick={(e) => e.stopPropagation()}
             className="w-8 h-8 bg-[#25D366] rounded-full flex items-center justify-center hover:bg-[#20bd5a] transition-colors flex-shrink-0"
           >
-            <MessageCircle className="w-4 h-4 text-white fill-white" />
+            <WhatsAppIcon className="w-4 h-4 text-white" />
           </a>
         </div>
         <p className="text-xs text-muted-foreground">{gstText}</p>

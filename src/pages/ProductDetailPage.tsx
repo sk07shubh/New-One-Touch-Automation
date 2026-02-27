@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, Heart, Minus, Plus, Play, MessageCircle } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Heart, Minus, Plus, Play } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import BottomNavigation from '@/components/BottomNavigation';
 import { getProductBySlug, getCategoryBySlug, categories } from '@/data/products';
 import { useCart } from '@/contexts/CartContext';
 import { toast } from 'sonner';
 import { ProductVariant } from '@/types/product';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 const ProductDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -183,7 +184,7 @@ const ProductDetailPage = () => {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#20bd5a] transition-colors"
             >
-              <MessageCircle className="w-4 h-4 fill-white" />
+              <WhatsAppIcon className="w-4 h-4" />
               WhatsApp
             </a>
           </div>
