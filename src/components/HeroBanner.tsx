@@ -27,12 +27,17 @@ const HeroBanner = () => {
         className="flex transition-transform duration-500 ease-in-out h-full"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}
       >
-        {slides.map(slide => (
+        {slides.map((slide, idx) => (
           <div key={slide.id} className="min-w-full h-full">
             <img
               src={slide.image}
               alt={`New Onetouch Food Machines - Slide ${slide.id}`}
               className="w-full h-full object-cover"
+              width={1200}
+              height={1600}
+              fetchPriority={idx === 0 ? 'high' : 'auto'}
+              loading={idx === 0 ? 'eager' : 'lazy'}
+              decoding="async"
             />
           </div>
         ))}
