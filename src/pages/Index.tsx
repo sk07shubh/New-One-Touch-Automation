@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { useAuth } from '@/contexts/AuthContext';
 import SearchBar from '@/components/SearchBar';
 import CategoryCard from '@/components/CategoryCard';
@@ -24,6 +25,14 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background pb-20">
+      <Helmet>
+        <title>New One Touch — Industrial Food Processing Machines</title>
+        <meta name="description" content="Shop industrial food processing machines: atta & masala mixers, roti, namkeen, dhokla, juicer & more. Quality SS body machinery built for commercial use." />
+        <link rel="canonical" href="/" />
+        <meta property="og:title" content="New One Touch — Industrial Food Processing Machines" />
+        <meta property="og:description" content="Shop industrial food processing machines: atta, masala, roti, namkeen, dhokla, juicer & more." />
+        <meta property="og:url" content="/" />
+      </Helmet>
       {/* Header */}
       <header className="px-4 pt-6 pb-4 bg-card">
         <div className="flex items-start justify-between mb-4">

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ChevronLeft, ChevronRight, Heart, Minus, Plus, Play } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import BottomNavigation from '@/components/BottomNavigation';
@@ -121,8 +122,39 @@ const ProductDetailPage = () => {
     ...(selectedVariant.drumSize ? [{ label: 'Drum Size', value: selectedVariant.drumSize }] : []),
   ];
 
+  const pageTitle = `${selectedVariant.name} — New One Touch`;
+  const pageDesc = `${selectedVariant.name} (${selectedVariant.modelNo}). ${product.description}`.slice(0, 160);
+  const canonical = `/product/${product.slug}`;
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: selectedVariant.name,
+    description: product.description,
+    image: product.image,
+    sku: selectedVariant.modelNo,
+    brand: { "@type": "Brand", name: "New One Touch" },
+    offers: {
+      "@type": "Offer",
+      price: selectedVariant.price,
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+      url: `https://automation-genius-shop.lovable.app${canonical}`,
+    },
+  };
+
   return (
     <div className="min-h-screen bg-background pb-32">
+      <Helmet>
+        <title>{pageTitle}</title>
+        <meta name="description" content={pageDesc} />
+        <link rel="canonical" href={canonical} />
+        <meta property="og:title" content={pageTitle} />
+        <meta property="og:description" content={pageDesc} />
+        <meta property="og:url" content={canonical} />
+        <meta property="og:type" content="product" />
+        <meta property="og:image" content={product.image} />
+        <script type="application/ld+json">{JSON.stringify(productJsonLd)}</script>
+      </Helmet>
       <PageHeader title="Product Details" />
 
       <main>

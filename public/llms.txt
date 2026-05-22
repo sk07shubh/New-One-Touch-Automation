@@ -1,0 +1,18 @@
+# New One Touch
+
+> Manufacturer of industrial food processing machines and equipment — atta mixers, masala mixers, roti machines, namkeen makers, dhokla steamers, juicers and more.
+
+New One Touch supplies quality stainless-steel food processing machinery for commercial and industrial kitchens across India. Products are available in multiple capacities with detailed specifications (model number, motor, weight, size, GST).
+
+## Pages
+
+- [Home](/): Featured machines, categories and new arrivals.
+- [All Products](/products): Browse the full catalogue of food processing machines.
+- [Categories](/categories): Browse machines by type (atta mixing, roti, namkeen, etc.).
+- [About](/profile/about): About New One Touch Automation.
+- [Contact](/profile/contact): Phone, email and address.
+
+## Optional
+
+- [Terms](/profile/terms): Terms & conditions.
+- [Privacy](/profile/privacy): Privacy policy.
