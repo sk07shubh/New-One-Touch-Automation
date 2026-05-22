@@ -38,7 +38,7 @@ const Index = () => {
       <header className="px-4 pt-6 pb-4 bg-card">
         <div className="grid grid-cols-3 items-center mb-4">
           <div />
-          <img src={logo} alt="New Onetouch Food Machines" className="h-12 mx-auto" />
+          <img src={logo} alt="New Onetouch Food Machines" className="h-12 w-auto mx-auto" />
           <div className="flex justify-end">
             {user ? (
               <Link
