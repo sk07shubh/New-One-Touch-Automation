@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import PageHeader from '@/components/PageHeader';
 import SearchBar from '@/components/SearchBar';
 import ProductCard from '@/components/ProductCard';
@@ -107,8 +108,21 @@ const CategoryPage = () => {
     );
   }
 
+  const catTitle = `${category.name} — New One Touch`;
+  const catDesc = `Browse ${category.name.toLowerCase()} from New One Touch. Quality SS body food processing machinery available in multiple capacities for commercial use.`;
+  const catCanonical = `/category/${category.slug}`;
+
   return (
     <div className="min-h-screen bg-background pb-20">
+      <Helmet>
+        <title>{catTitle}</title>
+        <meta name="description" content={catDesc} />
+        <link rel="canonical" href={catCanonical} />
+        <meta property="og:title" content={catTitle} />
+        <meta property="og:description" content={catDesc} />
+        <meta property="og:url" content={catCanonical} />
+        <meta property="og:image" content={category.image} />
+      </Helmet>
       <PageHeader title={category.name} />
 
       <div className="px-4 py-4">
