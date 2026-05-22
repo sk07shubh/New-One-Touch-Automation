@@ -37,30 +37,34 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/auth" element={<AuthPage />} />
-              <Route path="/categories" element={<CategoriesPage />} />
-              <Route path="/category/:slug" element={<CategoryPage />} />
-              <Route path="/product/:slug" element={<ProductDetailPage />} />
-              <Route path="/products" element={<ProductsPage />} />
-              <Route path="/cart" element={<CartPage />} />
-              <Route path="/orders" element={<OrdersPage />} />
-              <Route path="/order/:id" element={<OrderDetailPage />} />
-              <Route path="/profile" element={<ProfilePage />} />
-              <Route path="/profile/edit" element={<EditProfilePage />} />
-              <Route path="/profile/addresses" element={<AddressesPage />} />
-              <Route path="/profile/payment" element={<PaymentPage />} />
-              <Route path="/profile/wishlist" element={<WishlistPage />} />
-              <Route path="/profile/contact" element={<ContactPage />} />
-              <Route path="/profile/about" element={<AboutPage />} />
-              <Route path="/profile/terms" element={<TermsPage />} />
-              <Route path="/profile/privacy" element={<PrivacyPage />} />
-              <Route path="/profile/catalogue" element={<CataloguePage />} />
-              <Route path="/profile/pricelist" element={<PriceListPage />} />
-              {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <div className="min-h-screen bg-muted/30">
+              <div className="max-w-lg mx-auto bg-background min-h-screen shadow-xl relative">
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/auth" element={<AuthPage />} />
+                  <Route path="/categories" element={<CategoriesPage />} />
+                  <Route path="/category/:slug" element={<CategoryPage />} />
+                  <Route path="/product/:slug" element={<ProductDetailPage />} />
+                  <Route path="/products" element={<ProductsPage />} />
+                  <Route path="/cart" element={<CartPage />} />
+                  <Route path="/orders" element={<OrdersPage />} />
+                  <Route path="/order/:id" element={<OrderDetailPage />} />
+                  <Route path="/profile" element={<ProfilePage />} />
+                  <Route path="/profile/edit" element={<EditProfilePage />} />
+                  <Route path="/profile/addresses" element={<AddressesPage />} />
+                  <Route path="/profile/payment" element={<PaymentPage />} />
+                  <Route path="/profile/wishlist" element={<WishlistPage />} />
+                  <Route path="/profile/contact" element={<ContactPage />} />
+                  <Route path="/profile/about" element={<AboutPage />} />
+                  <Route path="/profile/terms" element={<TermsPage />} />
+                  <Route path="/profile/privacy" element={<PrivacyPage />} />
+                  <Route path="/profile/catalogue" element={<CataloguePage />} />
+                  <Route path="/profile/pricelist" element={<PriceListPage />} />
+                  {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </div>
+            </div>
           </BrowserRouter>
         </CartProvider>
       </AuthProvider>
