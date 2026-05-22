@@ -36,20 +36,27 @@ const Index = () => {
       </Helmet>
       {/* Header */}
       <header className="px-4 pt-6 pb-4 bg-card">
-        <div className="flex items-start justify-between mb-4">
-          <img src={logo} alt="New Onetouch Food Machines" className="h-12" />
-          {user ? (
-            <Link to="/profile" className="text-sm font-medium text-primary hover:underline">
-              Profile
-            </Link>
-          ) : (
-            <Link
-              to="/auth"
-              className="bg-primary text-primary-foreground px-4 py-2 rounded-lg text-sm font-medium hover:bg-primary/90 transition-colors"
-            >
-              Sign Up
-            </Link>
-          )}
+        <div className="grid grid-cols-3 items-center mb-4">
+          <div />
+          <img src={logo} alt="New Onetouch Food Machines" className="h-12 mx-auto" />
+          <div className="flex justify-end">
+            {user ? (
+              <Link
+                to="/profile"
+                className="flex items-center gap-1.5 bg-secondary text-secondary-foreground px-3 py-2 rounded-full text-sm font-medium hover:bg-secondary/80 transition-colors"
+              >
+                <User className="w-4 h-4" />
+                Profile
+              </Link>
+            ) : (
+              <Link
+                to="/auth"
+                className="bg-primary text-primary-foreground px-4 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition-colors"
+              >
+                Sign Up
+              </Link>
+            )}
+          </div>
         </div>
         <SearchBar value={searchQuery} onChange={setSearchQuery} />
       </header>
