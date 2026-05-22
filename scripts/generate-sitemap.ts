@@ -1,8 +1,7 @@
 // Runs before `vite dev` and `vite build` (predev/prebuild hooks); writes public/sitemap.xml.
 
-import { writeFileSync } from "fs";
+import { writeFileSync, readFileSync } from "fs";
 import { resolve } from "path";
-import { categories, products } from "../src/data/products";
 
 const BASE_URL = "https://automation-genius-shop.lovable.app";
 
@@ -22,14 +21,32 @@ const staticEntries: SitemapEntry[] = [
   { path: "/profile/privacy", changefreq: "yearly", priority: "0.3" },
 ];
 
-const categoryEntries: SitemapEntry[] = categories.map(c => ({
-  path: `/category/${c.slug}`,
+// Parse slugs from products.ts without importing it (it imports image assets).
+const productsSource = readFileSync(resolve("src/data/products.ts"), "utf8");
+const slugRegex = /slug:\s*'([^']+)'/g;
+
+const categoryBlock = productsSource.split("export const products")[0];
+const productBlock = productsSource.split("export const products")[1] ?? "";
+
+function extractSlugs(block: string): string[] {
+  const slugs = new Set<string>();
+  let m: RegExpExecArray | null;
+  while ((m = slugRegex.exec(block)) !== null) slugs.add(m[1]);
+  return Array.from(slugs);
+}
+
+const categorySlugs = extractSlugs(categoryBlock);
+slugRegex.lastIndex = 0;
+const productSlugs = extractSlugs(productBlock);
+
+const categoryEntries: SitemapEntry[] = categorySlugs.map(slug => ({
+  path: `/category/${slug}`,
   changefreq: "weekly",
   priority: "0.7",
 }));
 
-const productEntries: SitemapEntry[] = products.map(p => ({
-  path: `/product/${p.slug}`,
+const productEntries: SitemapEntry[] = productSlugs.map(slug => ({
+  path: `/product/${slug}`,
   changefreq: "weekly",
   priority: "0.7",
 }));
