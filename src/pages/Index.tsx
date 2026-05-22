@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
+import { User } from 'lucide-react';
 import { useAuth } from '@/contexts/AuthContext';
 import SearchBar from '@/components/SearchBar';
 import CategoryCard from '@/components/CategoryCard';
