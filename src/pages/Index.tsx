@@ -36,9 +36,9 @@ const Index = () => {
       </Helmet>
       {/* Header */}
       <header className="px-4 pt-6 pb-4 bg-card">
-        <div className="grid grid-cols-3 items-center mb-4">
+        <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-3 mb-4">
           <div />
-          <img src={logo} alt="New Onetouch Food Machines" className="max-h-12 w-auto max-w-full mx-auto object-contain" />
+          <img src={logo} alt="New Onetouch Food Machines" className="max-h-16 w-auto max-w-[11rem] mx-auto object-contain" />
           <div className="flex justify-end">
             {user ? (
               <Link
