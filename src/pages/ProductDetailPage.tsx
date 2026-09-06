@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ChevronLeft, ChevronRight, Heart, Minus, Plus, Play } from 'lucide-react';
+import { Heart, Minus, Plus } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import BottomNavigation from '@/components/BottomNavigation';
 import { getProductBySlug, getCategoryBySlug, categories } from '@/data/products';
