@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { ChevronLeft, ChevronRight, Heart, Minus, Plus, Play } from 'lucide-react';
+import { Heart, Minus, Plus } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import BottomNavigation from '@/components/BottomNavigation';
 import { getProductBySlug, getCategoryBySlug, categories } from '@/data/products';
@@ -14,7 +14,6 @@ const ProductDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [imageIndex, setImageIndex] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
   const { addToCart } = useCart();
 
@@ -158,32 +157,6 @@ const ProductDetailPage = () => {
       <PageHeader title="Product Details" />
 
       <main>
-        {/* Image Gallery */}
-        <div className="relative bg-secondary/30 aspect-square">
-          <span className="badge-tag absolute top-4 left-4 z-10">Auto-rotating</span>
-          <img
-            src={product.image}
-            alt={product.name}
-            className="w-full h-full object-contain p-8"
-          />
-          <button className="absolute left-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-muted/80 rounded-full flex items-center justify-center shadow-md">
-            <ChevronLeft className="w-6 h-6 text-muted-foreground" />
-          </button>
-          <button className="absolute right-2 top-1/2 -translate-y-1/2 w-10 h-10 bg-muted/80 rounded-full flex items-center justify-center shadow-md">
-            <ChevronRight className="w-6 h-6 text-muted-foreground" />
-          </button>
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5">
-            {[0, 1, 2].map((index) => (
-              <button
-                key={index}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === imageIndex ? 'bg-primary w-4' : 'bg-muted-foreground/50'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
-
         <div className="p-4 space-y-4">
           {/* Title and Wishlist */}
           <div className="flex items-start justify-between gap-4">
