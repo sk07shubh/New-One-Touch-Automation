@@ -282,9 +282,6 @@ export const products: Product[] = [
     basePrice: 31600,
     variants: [
       { id: 'ncm-01', name: 'Namkeen Pan Coating Machine 18x18', modelNo: 'NCM-01', price: 31600, weight: '66 kg', bodyMaterial: 'SS Body', size: '41 x 23 x 36', capacity: '10-15 KG (one time)', motor: '0.5 hp', gstPercent: 18, description: 'Masala Coating Machine is used for any kind of snacks flavoring purpose.' },
-      { id: 'ncm-04', name: 'Namkeen Pan Coating Machine Tilting 18x18', modelNo: 'NCM-04', price: 32650, weight: '88 kg', bodyMaterial: 'SS Body', size: '42 x 19 x 38', capacity: '10-15 KG (one time)', motor: '0.5 hp', gstPercent: 18, description: 'Coating Pan machine, chips mixer is used to add flavour in namkeen, chips and nut.' },
-      { id: 'ncm-05', name: 'Namkeen Pan Coating Machine Tilting 24x24', modelNo: 'NCM-05', price: 36850, weight: '162 kg', bodyMaterial: 'SS Body', size: '68 x 37 x 51', capacity: '30-40 KG (one time)', motor: '1 hp', gstPercent: 18, description: 'Coating Pan machine, chips mixer is used to add flavour in namkeen, chips and nut.' },
-      { id: 'ncm-03', name: 'Namkeen Pan Coating Machine 32x32', modelNo: 'NCM-03', price: 50500, weight: '210 kg', bodyMaterial: 'SS Body', size: '78 x 31 x 75', capacity: '35-40 KG (one time)', motor: '1 H.P.', gstPercent: 18, description: 'Masala Coating Machine is used for any kind of snacks flavoring purpose.' },
     ],
   },
   // Dryer Machine
