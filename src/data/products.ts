@@ -56,89 +56,6 @@ export const categories: Category[] = [
 
 export const products: Product[] = [
   // ===== ATTA MIXING MACHINES =====
-  // Domestic Atta Mixing Machine (RAM series)
-  {
-    id: 'atta-mixing-1',
-    name: 'Domestic Atta Mixing Machine',
-    slug: 'domestic-atta-mixing-machine',
-    categoryId: 'atta-mixing',
-    description: 'Domestic atta mixing machine for home and small kitchen use. Available in 2 KG to 20 KG capacity.',
-    image: flourMixer,
-    basePrice: 6000,
-    isFeatured: true,
-    variants: [
-      { id: 'ram-01', name: '2 KG Domestic Atta Mixing Machine', modelNo: 'RAM-01', price: 6000, mrp: 9000, bodyMaterial: 'SS Body', motor: '0.25 hp', gstPercent: 18, description: '2 KG capacity domestic atta mixer' },
-      { id: 'ram-02', name: '5 KG Domestic Atta Mixing Machine', modelNo: 'RAM-02', price: 7500, weight: '20 kg', bodyMaterial: 'SS Body', motor: '0.5 hp', gstPercent: 18, description: '5 KG capacity domestic atta mixer' },
-      { id: 'ram-03', name: '10 KG Domestic Atta Mixing Machine', modelNo: 'RAM-03', price: 9500, weight: '25 kg', bodyMaterial: 'SS Body', motor: '0.5 hp', gstPercent: 18, description: '10 KG capacity domestic atta mixer' },
-      { id: 'ram-04', name: '15 KG Domestic Atta Mixing Machine', modelNo: 'RAM-04', price: 11500, weight: '30 kg', bodyMaterial: 'SS Body', motor: '1 hp', gstPercent: 18, description: '15 KG capacity domestic atta mixer' },
-      { id: 'ram-05', name: '20 KG Domestic Atta Mixing Machine', modelNo: 'RAM-05', price: 14500, weight: '35 kg', bodyMaterial: 'SS Body', motor: '1 hp', gstPercent: 18, description: '20 KG capacity domestic atta mixer' },
-    ],
-  },
-  // 2 KG Domestic Atta Mixing Machine (DAM - Fully SS, Helical Gear)
-  {
-    id: 'atta-mixing-dam',
-    name: '2 KG Domestic Atta Mixing Machine',
-    slug: '2kg-domestic-atta-mixing-machine',
-    categoryId: 'atta-mixing',
-    description: 'Fully S.S. Body, Maintenance-Free, Helical Gear System, Noise Less.',
-    image: flourMixer,
-    basePrice: 6000,
-    variants: [
-      { id: 'dam-01', name: '2 KG Domestic Atta Mixing Machine', modelNo: 'DAM-01', price: 6000, weight: '11 kg', bodyMaterial: 'SS Body', size: '12\' X 14\' X 19\'', capacity: '0.3 KG TO 2 KG APX / 10 MIN', motor: '0.25 H.P.', gstPercent: 18, description: 'Fully S.S. Body, Maintenance-Free, Helical Gear System, Noise Less', features: ['Fully S.S. Body', 'Maintenance-Free', 'Helical Gear System', 'Noise Less'] },
-    ],
-  },
-  // Atta Mixing Machine Premium (AMP series)
-  {
-    id: 'atta-mixing-premium',
-    name: 'Atta Mixing Machine Premium',
-    slug: 'atta-mixing-machine-premium',
-    categoryId: 'atta-mixing',
-    description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design.',
-    image: flourMixer,
-    basePrice: 11100,
-    isFeatured: true,
-    variants: [
-      { id: 'amp-01', name: '5 KG Atta Mixing Machine Premium', modelNo: 'AMP-01', price: 11100, weight: '46 kg', bodyMaterial: 'Ms Body', size: '30\' X 16\' X 25\'', capacity: '5 KG / 10 MIN', motor: '0.75 HP', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
-      { id: 'amp-02', name: '10 KG Atta Mixing Machine Premium', modelNo: 'AMP-02', price: 20100, weight: '65 kg', bodyMaterial: 'Ms Body', size: '36\' X 21\' X 35\'', capacity: '10 KG / 10 MIN', motor: '1.5 H.P.', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
-      { id: 'amp-03', name: '15 KG Atta Mixing Machine Premium', modelNo: 'AMP-03', price: 20600, weight: '67 kg', bodyMaterial: 'Ms Body', size: '36\' X 21\' X 35\'', capacity: '15 KG / 10 MIN', motor: '1.5 H.P.', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
-      { id: 'amp-04', name: '20 KG Atta Mixing Machine Premium', modelNo: 'AMP-04', price: 27300, weight: '105 kg', bodyMaterial: 'Ms Body', size: '46\' X 41\' X 26\'', capacity: '20 KG / 15 MIN', motor: '2 H.P.', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
-      { id: 'amp-05', name: '25 KG Atta Mixing Machine Premium', modelNo: 'AMP-05', price: 27900, weight: '135 kg', bodyMaterial: 'Ms Body', size: '48\' X 42\' X 28\'', capacity: '20 KG / 15 MIN', motor: '2 H.P.', gstPercent: 18, description: 'Disc Brake, Foot Pressing System, Maintenance Free Helical Gear, Oval Shape Bowl, New Look, Smart Design', features: ['Disc Brake', 'Foot Pressing System', 'Maintenance Free Helical Gear', 'Oval Shape Bowl', 'New Look', 'Smart Design'] },
-    ],
-  },
-  // Atta Mixing Machine Drum Type S.S. (AMDS series)
-  {
-    id: 'atta-mixing-drum-ss',
-    name: 'Atta Mixing Machine Drum Type S.S.',
-    slug: 'atta-mixing-machine-drum-type-ss',
-    categoryId: 'atta-mixing',
-    description: 'Maintenance Free Helical Gear System, Fully S.S Body, Tilting Drum System.',
-    image: flourMixer,
-    basePrice: 12100,
-    isNewArrival: true,
-    variants: [
-      { id: 'amds-01', name: '5 KG Atta Mixing Machine Drum Type S.S.', modelNo: 'AMDS-01', price: 12100, weight: '23 kg', bodyMaterial: 'SS Body', size: '25\' X 11\' X 21\'', capacity: '5 KG', motor: '0.5 H.P.', gstPercent: 18, description: 'Maintenance Free Helical Gear System, Fully S.S Body, Tilting Drum System', features: ['Maintenance Free Helical Gear System', 'Fully S.S Body', 'Tilting Drum System'] },
-      { id: 'amds-02', name: '10 KG Atta Mixing Machine Drum Type S.S.', modelNo: 'AMDS-02', price: 18100, weight: '40 kg', bodyMaterial: 'SS Body', size: '28\' X 15\' X 31\'', capacity: '10 KG', motor: '1 H.P.', gstPercent: 18, description: 'Maintenance Free Helical Gear System, Fully S.S Body, Tilting Drum System', features: ['Maintenance Free Helical Gear System', 'Fully S.S Body', 'Tilting Drum System'] },
-      { id: 'amds-03', name: '15 KG Atta Mixing Machine Drum Type S.S.', modelNo: 'AMDS-03', price: 21100, weight: '52 kg', bodyMaterial: 'SS Body', size: '31\' X 15\' X 35\'', capacity: '15 KG', motor: '1.5 H.P.', gstPercent: 18, description: 'Maintenance Free Helical Gear System, Fully S.S Body, Tilting Drum System', features: ['Maintenance Free Helical Gear System', 'Fully S.S Body', 'Tilting Drum System'] },
-    ],
-  },
-  // Atta Mixing Machine Premium S.S. Bowl Type (AMPS series)
-  {
-    id: 'atta-mixing-premium-ss-bowl',
-    name: 'Atta Mixing Machine Premium S.S. (Bowl Type)',
-    slug: 'atta-mixing-machine-premium-ss-bowl-type',
-    categoryId: 'atta-mixing',
-    description: 'Premium S.S. Body Atta Mixing Machine with Bowl Type design.',
-    image: flourMixer,
-    basePrice: 12100,
-    variants: [
-      { id: 'amps-01', name: '5 kg Atta Mixing Machine Premium S.S. (Bowl Type)', modelNo: 'AMPS-01', price: 12100, weight: '46 kg', bodyMaterial: 'SS BODY', size: '30\'x16\'x25\'', capacity: '5 kg / 10 Min', motor: '0.75 hp', gstPercent: 18, description: 'Premium SS Bowl Type atta mixer' },
-      { id: 'amps-02', name: '10 kg Atta Mixing Machine Premium S.S. (Bowl Type)', modelNo: 'AMPS-02', price: 21600, weight: '65 kg', bodyMaterial: 'SS BODY', size: '36\'x21\'x35\'', capacity: '10 kg / 10 Min', motor: '1.5 hp', gstPercent: 18, description: 'Premium SS Bowl Type atta mixer' },
-      { id: 'amps-03', name: '15 kg Atta Mixing Machine Premium S.S. (Bowl Type)', modelNo: 'AMPS-03', price: 22100, weight: '67 kg', bodyMaterial: 'SS BODY', size: '36\'x21\'x35\'', capacity: '15 kg / 15 Min', motor: '1.5 hp', gstPercent: 18, description: 'Premium SS Bowl Type atta mixer' },
-      { id: 'amps-04', name: '20 kg Atta Mixing Machine Premium S.S. (Bowl Type)', modelNo: 'AMPS-04', price: 29600, weight: '105 kg', bodyMaterial: 'SS BODY', size: '46\'x41\'x26\'', capacity: '20 kg / 15 Min', motor: '2 hp', gstPercent: 18, description: 'Premium SS Bowl Type atta mixer' },
-      { id: 'amps-05', name: '25 kg Atta Mixing Machine Premium S.S. (Bowl Type)', modelNo: 'AMPS-05', price: 30100, weight: '135 kg', bodyMaterial: 'SS BODY', size: '48\'x42\'x28\'', capacity: '25 kg / 15 Min', motor: '2 hp', gstPercent: 18, description: 'Premium SS Bowl Type atta mixer' },
-    ],
-  },
-
   // ===== MASALA MIXING MACHINE =====
   {
     id: 'masala-mixing-1',
@@ -297,24 +214,6 @@ export const products: Product[] = [
       { id: 'gm-105', name: '7.5 Hp Gravy Machine (Three Phase)', modelNo: 'GM-105', price: 44700, weight: '140 kg', bodyMaterial: 'SS Body', size: '35 x 45 x 25', capacity: '600 to 700 Kg P/Hr', motor: '7.5 Hp', drumSize: '14 x 7', gstPercent: 18, description: 'This Gravy machine is very useful in all types of commercial kitchens.' },
     ],
   },
-  // Gravy Masala Machine
-  {
-    id: 'gravy-masala-1',
-    name: 'Gravy Masala Machine',
-    slug: 'gravy-masala-machine',
-    categoryId: 'gravy-masala',
-    description: 'Gravy Masala machine use for making punjabi gravy, pest, pulp & juice of all green vegetable like tomato, onion, palak, beetroot etc... wet dal crush for idli, dhosa, khaman, dalwada, juice form amla & fruits. This most useful in restaurant, catering, hotel etc.',
-    image: gravyMachine,
-    basePrice: 12700,
-    isNewArrival: true,
-    variants: [
-      { id: 'gmm-101', name: '2 Hp Gravy Masala Machine', modelNo: 'GMM-101', price: 12700, weight: '45 kg', bodyMaterial: 'SS Body', size: '21 x 17 x 31', capacity: '35-40 Kg P/Hr', motor: '2 Hp', drumSize: '8 x 4', gstPercent: 18, description: 'Gravy Masala machine use for making punjabi gravy, pest, pulp & juice.' },
-      { id: 'gmm-102', name: '3 Hp Gravy Masala Machine', modelNo: 'GMM-102', price: 16000, weight: '54 kg', bodyMaterial: 'SS Body', size: '25 x 19 x 37', capacity: '100 to 130 Kg P/Hr', motor: '3 Hp', drumSize: '10 x 4', gstPercent: 18, description: 'Gravy Masala machine use for making punjabi gravy, pest, pulp & juice.' },
-      { id: 'gmm-103', name: '4 Hp Gravy Masala Machine', modelNo: 'GMM-103', price: 22100, weight: '82 kg', bodyMaterial: 'SS Body', size: '28 x 24 x 41', capacity: '150 to 180 Kg P/Hr', motor: '4 Hp', drumSize: '10 x 6', gstPercent: 18, description: 'Gravy Masala machine use for making punjabi gravy, pest, pulp & juice.' },
-      { id: 'gmm-104', name: '5 Hp Gravy Masala Machine', modelNo: 'GMM-104', price: 23700, weight: '85 kg', bodyMaterial: 'SS Body', size: '28 x 24 x 41', capacity: '200 to 300 Kg P/Hr', motor: '5 Hp', drumSize: '10 x 6', gstPercent: 18, description: 'Gravy Masala machine use for making punjabi gravy, pest, pulp & juice.' },
-      { id: 'gmm-105', name: '7.5 Hp Gravy Masala Machine', modelNo: 'GMM-105', price: 36850, weight: '105 kg', bodyMaterial: 'SS Body', size: '30 x 24 x 48', capacity: '600 to 700 Kg P/Hr', motor: '7.5 Hp', drumSize: '12 x 6', gstPercent: 18, description: 'Gravy Masala machine use for making punjabi gravy, pest, pulp & juice.' },
-    ],
-  },
   // Halwa Machine
   {
     id: 'halwa-machine-1',
@@ -401,19 +300,6 @@ export const products: Product[] = [
       { id: 'dm-101', name: 'Dryer Machine', modelNo: 'DM-101', price: 19550, weight: '95 kg', bodyMaterial: 'SS Body', size: '38 X 30 X 21', capacity: '20 kg(One Time)', motor: '1 Hp', drumSize: '12 x 14', gstPercent: 18, description: 'A Commercial Oil Drying machine is used to remove extra oil & water from Potato Fries, Namkeen, and Wet Dal.' },
     ],
   },
-  // Papad Rolling Machine
-  {
-    id: 'papad-rolling-1',
-    name: 'Papad Rolling Machine',
-    slug: 'papad-rolling-machine',
-    categoryId: 'papad-rolling',
-    description: 'Manual Papad Rolling Machine is used in big canteens, small scale industry and hotels for rolling papads.',
-    image: rotiPress,
-    basePrice: 16500,
-    variants: [
-      { id: 'pr-01', name: 'Papad Rolling Machine', modelNo: 'PR-01', price: 16500, weight: '63 kg', bodyMaterial: 'SS Body', size: '27 x 18 x 30', capacity: '50 to 60 Kg', motor: '0.5 Hp', gstPercent: 18, description: 'Manual Papad Rolling Machine is used in big canteens, small scale industry and hotels for rolling papads.' },
-    ],
-  },
   // Coconut Scraper
   {
     id: 'coconut-scraper-1',
@@ -480,19 +366,6 @@ export const products: Product[] = [
       { id: 'rc-2', name: 'Roti Machine Set Conveyor Ceramic Plate Type (1000 roti/hr)', modelNo: 'RC-2', price: 172000, weight: '430 kg', bodyMaterial: 'SS Body', size: '75 x 31 x 56', capacity: '800 TO 1000', motor: '1 HP + 1 H.P.', gstPercent: 18, description: 'Conveyor type automatic roti making machine ceramic plate type.' },
     ],
   },
-  // Burr Pressing Machine
-  {
-    id: 'burr-pressing-1',
-    name: 'Burr Pressing Machine',
-    slug: 'burr-pressing-machine',
-    categoryId: 'burr-pressing',
-    description: 'Heavy duty burr pressing machine for commercial use.',
-    image: rotiPress,
-    basePrice: 30000,
-    variants: [
-      { id: 'bp-01', name: 'Burr Pressing Machine', modelNo: 'BP-01', price: 30000, bodyMaterial: 'SS Ring', size: "3'x3'x7' Feet", capacity: '110-115 mm', motor: '15 hp 440/415 V 3 Phase 50 Hz', gstPercent: 18, description: 'Heavy duty burr pressing machine' },
-    ],
-  },
   // Roti Pressing Machine
   {
     id: 'roti-pressing-1',
@@ -512,32 +385,6 @@ export const products: Product[] = [
       { id: 'r-3', name: 'Roti Pressing Machine Ceramic Plate Type', modelNo: 'R-3', price: 45000, weight: '107 kg', bodyMaterial: 'SS Body', size: '31 x 17 x 19', capacity: '900 TO 1000', motor: '1 hp', gstPercent: 18, description: 'Our semi auto Roti making machine designed for commercial use, ceramic plate type.' },
       { id: 'r-4', name: 'Premium Roti Pressing Machine 14inch', modelNo: 'R-4', price: 48000, weight: '65 kg', bodyMaterial: 'SS Body', size: '20 x 26 x 23', capacity: '750/hr', motor: '0.5 FHP', gstPercent: 18, description: '14 inch premium roti pressing machine.' },
       { id: 'r-2', name: 'Roti Pressing Machine With Bathi (Ceramic Plate Type)', modelNo: 'R-2', price: 60000, weight: '147 kg', bodyMaterial: 'SS Body', size: '35 x 19 x 21', capacity: '900 to 1000 PR HR', motor: '1 HP', gstPercent: 18, description: 'Roti Pressing Machine With Bathi (Ceramic Plate Type).' },
-    ],
-  },
-  // Roll Labeling Machine
-  {
-    id: 'roll-labeling-1',
-    name: 'Roll Labeling Machine',
-    slug: 'roll-labeling-machine',
-    categoryId: 'roll-labeling',
-    description: 'Domestic roll labeling machine for product packaging and labeling.',
-    image: doughBall,
-    basePrice: 16500,
-    variants: [
-      { id: 'p-300', name: 'P-300 Domestic Roll Labeling Machine', modelNo: 'P-300', price: 16500, bodyMaterial: 'Plastic, Aluminium', capacity: '250 MM', motor: '27 Watt, 230V AC', gstPercent: 18, description: 'P-300 domestic roll labeling machine' },
-    ],
-  },
-  // Conveyor Machine
-  {
-    id: 'conveyor-machine-1',
-    name: 'Conveyor Machine',
-    slug: 'conveyor-machine',
-    categoryId: 'conveyor-machine',
-    description: 'Iron machine set conveyor / conveyor plane for food processing lines.',
-    image: rotiMachine,
-    basePrice: 72000,
-    variants: [
-      { id: 'conv-01', name: 'Iron Machine Set Conveyor / Conveyor Plane', modelNo: 'CONV-01', price: 72000, bodyMaterial: 'MS SS', capacity: '30 to 150 KG', motor: '0.25 - 11 KW', gstPercent: 18, description: 'Conveyor machine set' },
     ],
   },
   // Steam Dhokla Machine
