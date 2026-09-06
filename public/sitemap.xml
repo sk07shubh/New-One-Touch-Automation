@@ -36,11 +36,6 @@
     <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://automation-genius-shop.lovable.app/category/atta-mixing</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://automation-genius-shop.lovable.app/category/masala-mixing</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -86,11 +81,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://automation-genius-shop.lovable.app/category/gravy-masala</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://automation-genius-shop.lovable.app/category/halwa-machine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -116,11 +106,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://automation-genius-shop.lovable.app/category/papad-rolling</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://automation-genius-shop.lovable.app/category/coconut-scraper</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -142,21 +127,6 @@
   </url>
   <url>
     <loc>https://automation-genius-shop.lovable.app/category/roti-pressing</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/category/burr-pressing</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/category/roll-labeling</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/category/conveyor-machine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -206,31 +176,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://automation-genius-shop.lovable.app/product/domestic-atta-mixing-machine</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/product/2kg-domestic-atta-mixing-machine</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/product/atta-mixing-machine-premium</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/product/atta-mixing-machine-drum-type-ss</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/product/atta-mixing-machine-premium-ss-bowl-type</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://automation-genius-shop.lovable.app/product/namkeen-masala-mixing-machine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -276,11 +221,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://automation-genius-shop.lovable.app/product/gravy-masala-machine</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://automation-genius-shop.lovable.app/product/halwa-machine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -306,11 +246,6 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://automation-genius-shop.lovable.app/product/papad-rolling-machine</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://automation-genius-shop.lovable.app/product/coconut-scraper</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
@@ -331,22 +266,7 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://automation-genius-shop.lovable.app/product/burr-pressing-machine</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
     <loc>https://automation-genius-shop.lovable.app/product/roti-pressing-machine</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/product/roll-labeling-machine</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://automation-genius-shop.lovable.app/product/conveyor-machine</loc>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
