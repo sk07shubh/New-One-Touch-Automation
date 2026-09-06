@@ -14,7 +14,6 @@ const ProductDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
   const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
   const [quantity, setQuantity] = useState(1);
-  const [imageIndex, setImageIndex] = useState(0);
   const [isFavorite, setIsFavorite] = useState(false);
   const { addToCart } = useCart();
 
