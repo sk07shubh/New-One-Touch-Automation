@@ -39,19 +39,15 @@ const categorySlugs = extractSlugs(categoryBlock);
 slugRegex.lastIndex = 0;
 const productSlugs = extractSlugs(productBlock);
 
-const categoryEntries: SitemapEntry[] = categorySlugs.map(slug => ({
-  path: `/category/${slug}`,
-  changefreq: "weekly",
-  priority: "0.7",
-}));
-
+// Category pages redirect straight to their single product's page, so they
+// don't need their own sitemap entries.
 const productEntries: SitemapEntry[] = productSlugs.map(slug => ({
   path: `/product/${slug}`,
   changefreq: "weekly",
   priority: "0.7",
 }));
 
-const entries = [...staticEntries, ...categoryEntries, ...productEntries];
+const entries = [...staticEntries, ...productEntries];
 
 function generateSitemap(entries: SitemapEntry[]) {
   const urls = entries.map(e =>
