@@ -108,6 +108,11 @@ const CategoryPage = () => {
     );
   }
 
+  // Every category holds a single machine — skip the listing and open its specs directly.
+  if (categoryProducts.length === 1) {
+    return <Navigate to={`/product/${categoryProducts[0].slug}`} replace />;
+  }
+
   const catTitle = `${category.name} — New One Touch`;
   const catDesc = `Browse ${category.name.toLowerCase()} from New One Touch. Quality SS body food processing machinery available in multiple capacities for commercial use.`;
   const catCanonical = `/category/${category.slug}`;
