@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import PageHeader from '@/components/PageHeader';
 import SearchBar from '@/components/SearchBar';
