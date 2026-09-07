@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Navigate, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import PageHeader from '@/components/PageHeader';
 import SearchBar from '@/components/SearchBar';
@@ -106,6 +106,11 @@ const CategoryPage = () => {
         <BottomNavigation />
       </div>
     );
+  }
+
+  // Every category holds a single machine — skip the listing and open its specs directly.
+  if (categoryProducts.length === 1) {
+    return <Navigate to={`/product/${categoryProducts[0].slug}`} replace />;
   }
 
   const catTitle = `${category.name} — New One Touch`;
