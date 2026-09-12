@@ -8,7 +8,6 @@ import chapatiBhatti from '@/assets/machines/chapati-bhatti.jpg';
 import doughBall from '@/assets/machines/dough-ball.jpg';
 import dryFruit from '@/assets/machines/dry-fruit.jpg';
 import flourMixer from '@/assets/machines/flour-mixer.jpg';
-import gravyMachine from '@/assets/machines/gravy-machine.jpg';
 import powderGrinder from '@/assets/machines/powder-grinder.jpg';
 import ladduMaker from '@/assets/machines/laddu-maker.jpg';
 import mawaMachine from '@/assets/machines/mawa-machine.jpg';
@@ -23,34 +22,55 @@ import sugarcaneJuicer from '@/assets/machines/sugarcane-juicer.jpg';
 import vegetableCutter from '@/assets/machines/vegetable-cutter.jpg';
 import waferSlicer from '@/assets/machines/wafer-slicer.jpg';
 
+// Updated machine photos supplied by the owner
+const updatedBesanMixer = '/__l5e/assets-v1/20176296-5528-42dd-98a2-483e3b40b2cc/besan-mixing-machine.jpg';
+const updatedChapatiBhatti = '/__l5e/assets-v1/a63d9dc4-ea7b-45a4-99dd-43b9b80f229a/chapati-bhatthi.jpg';
+const updatedCoconutScraper = '/__l5e/assets-v1/49feedde-31ad-4218-86b2-8cdc74100671/coconut-scraper.jpg';
+const updatedDoughBall = '/__l5e/assets-v1/1721e0cc-93ed-41a5-b36b-73463cfa2294/dough-ball-machine.jpg';
+const updatedDryFruit = '/__l5e/assets-v1/4f2b854e-5d57-4d86-8dc0-03226160e138/dry-fruit-chips-powder-machine.jpg';
+const updatedDryer = '/__l5e/assets-v1/6432fea1-932a-40af-8e08-2fe59c5ce8ac/dryer-machine.jpg';
+const updatedGarlicPeeler = '/__l5e/assets-v1/99d3d0b5-5fed-46bd-8bb5-118741f880b2/garlic-peeling-machine.jpg';
+const updatedHalwaMachine = '/__l5e/assets-v1/ddef659b-b277-4549-89e9-d926b38c4b5d/halwa-machine.jpg';
+const updatedPowderGrinder = '/__l5e/assets-v1/2a96a7d8-2b1f-4889-9918-ffd7e448d6b1/high-speed-powder-grinder.jpg';
+const updatedLadduMaker = '/__l5e/assets-v1/73208629-58e0-4fd1-9d31-815a115bf2d2/laddu-machine.jpg';
+const updatedNamkeenMaker = '/__l5e/assets-v1/5336171c-c8e7-4bd3-9d7f-dfe6165c9cae/namkeen-making-machine.jpg';
+const updatedNamkeenMixer = '/__l5e/assets-v1/92c91620-cfad-4488-9345-10617b584b4f/namkeen-masala-mixing-machine.jpg';
+const updatedPotatoPeeler = '/__l5e/assets-v1/f550038a-bc1e-4df0-be44-6256848e162f/potato-peeler-machine.jpg';
+const updatedPotatoSlicer = '/__l5e/assets-v1/d522219b-6ccd-4c50-8c08-bc798c5f2c5d/potato-slicer-machine.jpg';
+const updatedRotiMachine = '/__l5e/assets-v1/e9a48d25-9e9d-451d-9bdd-b8e620eed8b8/roti-making-machine.jpg';
+const updatedRotiPress = '/__l5e/assets-v1/85b5e8c0-3f86-4ad3-81fb-78eb59c55897/roti-pressing-machine.jpg';
+const updatedSteamDhokla = '/__l5e/assets-v1/a79922ec-8942-4654-8ae9-17b555903aeb/steam-dhokla-machine.jpg';
+const updatedSugarcaneJuicer = '/__l5e/assets-v1/813bf2a7-0e53-4108-94cb-1f5f98fdc434/sugarcane-juicer-machine.jpg';
+const updatedVegetableChopper = '/__l5e/assets-v1/5830a519-ab13-460f-ae8a-e9f82f43f5c0/vegetable-chopping-machine.jpg';
+const updatedVegetableCutter = '/__l5e/assets-v1/6edd1ba8-edd8-43cd-86be-260c991a5348/vegetable-cutting-machine.jpg';
+
 export const categories: Category[] = [
-  { id: 'masala-mixing', name: 'Masala Mixing Machine', slug: 'masala-mixing', image: namkeenMixer },
-  { id: 'besan-mixing', name: 'Besan Mixing Machine', slug: 'besan-mixing', image: besanMixer },
+  { id: 'masala-mixing', name: 'Masala Mixing Machine', slug: 'masala-mixing', image: updatedNamkeenMixer },
+  { id: 'besan-mixing', name: 'Besan Mixing Machine', slug: 'besan-mixing', image: updatedBesanMixer },
   { id: 'boondi-making', name: 'Boondi Making Machine', slug: 'boondi-making', image: boondiMaker },
-  { id: 'chapati-bhatthi', name: 'Chapati Bhatthi', slug: 'chapati-bhatthi', image: chapatiBhatti },
-  { id: 'dough-ball', name: 'Dough Ball Machine', slug: 'dough-ball', image: doughBall },
-  { id: 'dry-fruit', name: 'Dry Fruit Machine', slug: 'dry-fruit', image: dryFruit },
+  { id: 'chapati-bhatthi', name: 'Chapati Bhatthi', slug: 'chapati-bhatthi', image: updatedChapatiBhatti },
+  { id: 'dough-ball', name: 'Dough Ball Machine', slug: 'dough-ball', image: updatedDoughBall },
+  { id: 'dry-fruit', name: 'Dry Fruit Machine', slug: 'dry-fruit', image: updatedDryFruit },
   { id: 'flour-mixing', name: 'Flour Mixing Machine', slug: 'flour-mixing', image: flourMixer },
-  { id: 'garlic-peeling', name: 'Garlic Peeling Machine', slug: 'garlic-peeling', image: peeler },
-  { id: 'gravy-making', name: 'Gravy Making Machine', slug: 'gravy-making', image: gravyMachine },
-  { id: 'halwa-machine', name: 'Halwa Machine', slug: 'halwa-machine', image: mawaMachine },
+  { id: 'garlic-peeling', name: 'Garlic Peeling Machine', slug: 'garlic-peeling', image: updatedGarlicPeeler },
+  { id: 'halwa-machine', name: 'Halwa Machine', slug: 'halwa-machine', image: updatedHalwaMachine },
   { id: 'mixer-grinder', name: 'Mixer Grinder', slug: 'mixer-grinder', image: mixerGrinder },
-  { id: 'namkeen-making', name: 'Namkeen Making Machine', slug: 'namkeen-making', image: namkeenMaker },
+  { id: 'namkeen-making', name: 'Namkeen Making Machine', slug: 'namkeen-making', image: updatedNamkeenMaker },
   { id: 'namkeen-pan-coating', name: 'Namkeen Pan Coating Machine', slug: 'namkeen-pan-coating', image: namkeenMixer },
-  { id: 'dryer-machine', name: 'Dryer Machine', slug: 'dryer-machine', image: oilDryer },
-  { id: 'coconut-scraper', name: 'Coconut Scraper', slug: 'coconut-scraper', image: mixerGrinder },
-  { id: 'potato-peeler', name: 'Potato Peeler Machine', slug: 'potato-peeler', image: peeler },
+  { id: 'dryer-machine', name: 'Dryer Machine', slug: 'dryer-machine', image: updatedDryer },
+  { id: 'coconut-scraper', name: 'Coconut Scraper', slug: 'coconut-scraper', image: updatedCoconutScraper },
+  { id: 'potato-peeler', name: 'Potato Peeler Machine', slug: 'potato-peeler', image: updatedPotatoPeeler },
   { id: 'powder-masala-mixer', name: 'Powder Masala Mixer Machine', slug: 'powder-masala-mixer', image: namkeenMixer },
-  { id: 'roti-making', name: 'Roti Making Machine', slug: 'roti-making', image: rotiMachine },
-  { id: 'roti-pressing', name: 'Roti Pressing Machine', slug: 'roti-pressing', image: rotiPress },
-  { id: 'steam-dhokla', name: 'Steam Dhokla Machine', slug: 'steam-dhokla', image: steamDhokla },
-  { id: 'steam-khaman', name: 'Naylon Khaman Machine', slug: 'steam-khaman', image: steamDhokla },
-  { id: 'sugarcane-juicer', name: 'Sugarcane Juicer', slug: 'sugarcane-juicer', image: sugarcaneJuicer },
-  { id: 'vegetable-chopping', name: 'Vegetable Chopping Machine', slug: 'vegetable-chopping', image: vegetableCutter },
-  { id: 'vegetable-cutting', name: 'Vegetable Cutting Machine', slug: 'vegetable-cutting', image: vegetableCutter },
-  { id: 'wafer-slicer', name: 'Wafer Slicer Machine', slug: 'wafer-slicer', image: waferSlicer },
-  { id: 'powder-grinder', name: 'High Speed Powder Grinder', slug: 'powder-grinder', image: powderGrinder },
-  { id: 'laddu-jamun', name: 'Laddu & Jamun Ball Making Machine', slug: 'laddu-jamun', image: ladduMaker },
+  { id: 'roti-making', name: 'Roti Making Machine', slug: 'roti-making', image: updatedRotiMachine },
+  { id: 'roti-pressing', name: 'Roti Pressing Machine', slug: 'roti-pressing', image: updatedRotiPress },
+  { id: 'steam-dhokla', name: 'Steam Dhokla Machine', slug: 'steam-dhokla', image: updatedSteamDhokla },
+  { id: 'steam-khaman', name: 'Naylon Khaman Machine', slug: 'steam-khaman', image: updatedSteamDhokla },
+  { id: 'sugarcane-juicer', name: 'Sugarcane Juicer', slug: 'sugarcane-juicer', image: updatedSugarcaneJuicer },
+  { id: 'vegetable-chopping', name: 'Vegetable Chopping Machine', slug: 'vegetable-chopping', image: updatedVegetableChopper },
+  { id: 'vegetable-cutting', name: 'Vegetable Cutting Machine', slug: 'vegetable-cutting', image: updatedVegetableCutter },
+  { id: 'wafer-slicer', name: 'Wafer Slicer Machine', slug: 'wafer-slicer', image: updatedPotatoSlicer },
+  { id: 'powder-grinder', name: 'High Speed Powder Grinder', slug: 'powder-grinder', image: updatedPowderGrinder },
+  { id: 'laddu-jamun', name: 'Laddu & Jamun Ball Making Machine', slug: 'laddu-jamun', image: updatedLadduMaker },
   { id: 'milk-mawa', name: 'Milk Mawa (Khoya) Machine', slug: 'milk-mawa', image: mawaMachine },
 ];
 
@@ -63,7 +83,7 @@ export const products: Product[] = [
     slug: 'namkeen-masala-mixing-machine',
     categoryId: 'masala-mixing',
     description: 'Namkeen Masala Mixer used to mixing different of spices, powder, fryms, namkeen, pickels, etc. available in 1.5 to 5 feet.',
-    image: namkeenMixer,
+    image: updatedNamkeenMixer,
     basePrice: 20050,
     isFeatured: true,
     variants: [
@@ -81,7 +101,7 @@ export const products: Product[] = [
     slug: 'besan-mixing-machine',
     categoryId: 'besan-mixing',
     description: 'The Besan Mixing Machine is used to evenly mix the water and the batter or gram flour powder. Batter powder. Besan mixer is used in the namkeen factory, catering company, and small namkeen shops.',
-    image: besanMixer,
+    image: updatedBesanMixer,
     basePrice: 22900,
     variants: [
       { id: 'bm-01', name: '10 kg Besan Mixing Machine', modelNo: 'BM-01', price: 22900, mrp: 25000, weight: '84 kg', bodyMaterial: 'SS Body', size: '29 x 37 x 20', capacity: '10kg/10min', motor: '1 hp', gstPercent: 18, description: 'The Besan Mixing Machine is used to evenly mix the water and the batter or gram flour powder, applied in diluted batter powder. Besan mixer is used in the namkeen factory, catering company, and small namkeen shops.' },
@@ -111,7 +131,7 @@ export const products: Product[] = [
     slug: 'ss-chapati-bhatthi',
     categoryId: 'chapati-bhatthi',
     description: 'Chapati Tawa bhatti for kitchen hotel is made of SS body material and non stick coating of Tawa cast iron is best for health and its budget friendly.',
-    image: chapatiBhatti,
+    image: updatedChapatiBhatti,
     basePrice: 7350,
     variants: [
       { id: 'cb-105', name: 'SS Chapati bhathi (30X15X14)', modelNo: 'CB - 105', price: 7350, weight: '25 kg', bodyMaterial: 'SS BODY', gstPercent: 18, description: 'Chapati Tawa bhatti for kitchen hotel is made of SS body material and non stick coating of Tawa cast iron is best for health and its budget friendly' },
@@ -129,7 +149,7 @@ export const products: Product[] = [
     slug: 'dough-ball-machine',
     categoryId: 'dough-ball',
     description: 'The machine is easy-to-operate and clean and can be customized to control the size of dough balls as per the requirement.',
-    image: doughBall,
+    image: updatedDoughBall,
     basePrice: 34000,
     isFeatured: true,
     variants: [
@@ -148,7 +168,7 @@ export const products: Product[] = [
     slug: 'dry-fruit-chips-powder-machine',
     categoryId: 'dry-fruit',
     description: 'It is used to make slice and powder from peanut, almond, cashew, Pista and other dry fruits.',
-    image: dryFruit,
+    image: updatedDryFruit,
     basePrice: 10500,
     variants: [
       { id: 'dfm-101', name: 'Dry Fruit Chips & Powder Machine', modelNo: 'DFM-101', price: 10500, weight: '30 kg', bodyMaterial: 'SS Body', size: '22 x 21 x 16', capacity: '25-30 KG', motor: '1 HP 960 RPM', gstPercent: 18, description: 'It is used to make slice and powder from peanut, almond, cashew, Pista and other dry fruits.' },
@@ -186,7 +206,7 @@ export const products: Product[] = [
     slug: 'garlic-peeling-machine',
     categoryId: 'garlic-peeling',
     description: 'Automatic garlic peeling machine for efficient peeling. Available in 5 KG to 50 KG capacity.',
-    image: peeler,
+    image: updatedGarlicPeeler,
     basePrice: 22500,
     isNewArrival: true,
     variants: [
@@ -196,24 +216,6 @@ export const products: Product[] = [
       { id: 'gp-04', name: 'Garlic Peeling Machine 50 Kg', modelNo: 'GP-04', price: 45000, weight: '50 kg', bodyMaterial: 'SS Body', size: '18 x 18 x 42', capacity: '50 kg/hr', motor: '1 hp', gstPercent: 18, description: '50 Kg/hr garlic peeler' },
     ],
   },
-  // Gravy Making Machine
-  {
-    id: 'gravy-making-1',
-    name: 'Gravy Making Machine',
-    slug: 'gravy-making-machine',
-    categoryId: 'gravy-making',
-    description: 'This Gravy machine is very useful in all types of commercial kitchens just you have to fill the raw material into the grinding chamber and this gravy Pulverizer converts the material into gravy or chutney. You can make gravy of either tomatoes, ginger, garlic or onions.',
-    image: gravyMachine,
-    basePrice: 7250,
-    isFeatured: true,
-    variants: [
-      { id: 'gm-101', name: '1 Hp Gravy Machine', modelNo: 'GM-101', price: 7250, weight: '20 kg', bodyMaterial: 'SS Body', size: '19 x 21 x 14', capacity: '10 to 15 Kg P/Hr', motor: '1 Hp', drumSize: '5 x 3', gstPercent: 18, description: 'This Gravy machine is very useful in all types of commercial kitchens.' },
-      { id: 'gm-102', name: '2 Hp Gravy Machine', modelNo: 'GM-102', price: 8500, weight: '37 kg', bodyMaterial: 'SS Body', size: '21 x 27 x 14', capacity: '35-40 Kg P/Hr', motor: '2 Hp', drumSize: '7 x 3', gstPercent: 18, description: 'This Gravy machine is very useful in all types of commercial kitchens.' },
-      { id: 'gm-103', name: '3 Hp Gravy Machine', modelNo: 'GM-103', price: 11650, weight: '40 kg', bodyMaterial: 'SS Body', size: '22 x 30 x 16', capacity: '100 to 130 Kg P/Hr', motor: '3 Hp', drumSize: '9 x 3', gstPercent: 18, description: 'This Gravy machine is very useful in all types of commercial kitchens.' },
-      { id: 'gm-104', name: '5 Hp Gravy Machine (Three Phase)', modelNo: 'GM-104', price: 20050, weight: '65 kg', bodyMaterial: 'SS Body', size: '22 x 33 x 17', capacity: '200 to 300 Kg P/Hr', motor: '5 Hp', drumSize: '12 x 4', gstPercent: 18, description: 'This Gravy machine is very useful in all types of commercial kitchens.' },
-      { id: 'gm-105', name: '7.5 Hp Gravy Machine (Three Phase)', modelNo: 'GM-105', price: 44700, weight: '140 kg', bodyMaterial: 'SS Body', size: '35 x 45 x 25', capacity: '600 to 700 Kg P/Hr', motor: '7.5 Hp', drumSize: '14 x 7', gstPercent: 18, description: 'This Gravy machine is very useful in all types of commercial kitchens.' },
-    ],
-  },
   // Halwa Machine
   {
     id: 'halwa-machine-1',
@@ -221,7 +223,7 @@ export const products: Product[] = [
     slug: 'halwa-machine',
     categoryId: 'halwa-machine',
     description: 'Machine will bake the material evenly. It can be used as a mixing machine to mix materials, slurry, liquids etc. It is useful for baking all types of halwa like moong halwa, Karachi halwa, tirunelveli halwa, Bombay halwa, ice halwa, besan, atta, all types of burfi\'s etc.',
-    image: mawaMachine,
+    image: updatedHalwaMachine,
     basePrice: 89100,
     variants: [
       { id: 'hm-01', name: 'Halwa Machine 2 Feet', modelNo: 'HM-01', price: 89100, weight: '200 kg', bodyMaterial: 'SS Body', size: '48 x 30 x 43', capacity: '20 TO 25 KG', motor: '0.5 H.P.', gstPercent: 18, description: 'Halwa machine 2 feet for baking and mixing halwa.' },
@@ -264,7 +266,7 @@ export const products: Product[] = [
     slug: 'namkeen-making-machine',
     categoryId: 'namkeen-making',
     description: 'Namkeen making machine or farshan machine is use for making various type of namkeen like sev, gathiya, papdi, etc. This machine is useful for namkeen related business.',
-    image: namkeenMaker,
+    image: updatedNamkeenMaker,
     basePrice: 15850,
     variants: [
       { id: 'nm-01', name: '7 Inch Namkeen Machine', modelNo: 'NM-01', price: 15850, weight: '55 kg', bodyMaterial: 'SS Body', size: '40 X 38 X 11', capacity: '60-70 KG', motor: '0.5 hp', gstPercent: 18, description: 'Namkeen making machine or farshan machine is use for making various type of namkeen like sev, gathiya, papdi, etc.' },
@@ -291,7 +293,7 @@ export const products: Product[] = [
     slug: 'dryer-machine',
     categoryId: 'dryer-machine',
     description: 'A Commercial Oil Drying machine is used to remove extra oil & water from Potato Fries, Namkeen, and Wet Dal.',
-    image: oilDryer,
+    image: updatedDryer,
     basePrice: 19550,
     variants: [
       { id: 'dm-101', name: 'Dryer Machine', modelNo: 'DM-101', price: 19550, weight: '95 kg', bodyMaterial: 'SS Body', size: '38 X 30 X 21', capacity: '20 kg(One Time)', motor: '1 Hp', drumSize: '12 x 14', gstPercent: 18, description: 'A Commercial Oil Drying machine is used to remove extra oil & water from Potato Fries, Namkeen, and Wet Dal.' },
@@ -304,7 +306,7 @@ export const products: Product[] = [
     slug: 'coconut-scraper',
     categoryId: 'coconut-scraper',
     description: 'This Coconut scrapper used for heavy duty purposes, such as for Restaurant, caterings etc. Highly safe and simple operation.',
-    image: mixerGrinder,
+    image: updatedCoconutScraper,
     basePrice: 3750,
     variants: [
       { id: 'cs-01', name: 'Coconut Scraper', modelNo: 'CS-01', price: 3750, weight: '8 kg', bodyMaterial: 'SS Body', size: '13 X 11 X 11', motor: '0.25 Hp', gstPercent: 18, description: 'This Coconut scrapper used for heavy duty purposes, such as for Restaurant, caterings etc. Highly safe and simple operation.' },
@@ -317,7 +319,7 @@ export const products: Product[] = [
     slug: 'potato-peeler-machine',
     categoryId: 'potato-peeler',
     description: 'These professional stainless steel electric potato peelers makes quick work of all your potato peeling needs. The potato peeler is simple and safe to use, as well as easy to clean.',
-    image: peeler,
+    image: updatedPotatoPeeler,
     basePrice: 11100,
     variants: [
       { id: 'ppm-101', name: 'Potato Peeler Machine 5 kg', modelNo: 'PPM-101', price: 11100, weight: '31 kg', bodyMaterial: 'SS Body', size: '25 X 19 X 13', capacity: '5 kg', motor: '0.5 Hp', gstPercent: 18, description: 'These professional stainless steel electric potato peelers makes quick work of all your potato peeling needs with an output capacity of 5 kg per batch.' },
@@ -349,7 +351,7 @@ export const products: Product[] = [
     slug: 'roti-making-machine',
     categoryId: 'roti-making',
     description: 'We have developed conveyor type automatic roti making machine for trust, temple, Dharmsala, restaurant etc. Roasting and processing machine are set for automatic Chapati making machine.',
-    image: rotiMachine,
+    image: updatedRotiMachine,
     basePrice: 60000,
     isFeatured: true,
     variants: [
@@ -370,7 +372,7 @@ export const products: Product[] = [
     slug: 'roti-pressing-machine',
     categoryId: 'roti-pressing',
     description: 'Our semi auto Roti making machine designed for commercial use, ideal for hotels, restaurants, and catering services. We can make a huge variety of items like Chapati, Thepla, Puris, Bhakhri, Paratas, Bajra roti etc.',
-    image: rotiPress,
+    image: updatedRotiPress,
     basePrice: 16500,
     variants: [
       { id: 'p-300', name: 'P-300 Domestic Roti Pressing Machine', modelNo: 'P-300', price: 16500, weight: '18 kg', bodyMaterial: 'SS Body', size: '13\' X 9\' X 12\'', capacity: '250-300', motor: '0.25 H.P.', gstPercent: 18, description: 'Papad Jaisi Patali Roti, Easy To Work, 6 Roti / Min, Compact Size Like Ladies Purse.' },
@@ -391,7 +393,7 @@ export const products: Product[] = [
     slug: 'steam-dhokla-machine',
     categoryId: 'steam-dhokla',
     description: 'SS steam Dhokala machine is use to make Dhokla, idli khaman etc. They are available in many sizes as per tray.',
-    image: steamDhokla,
+    image: updatedSteamDhokla,
     basePrice: 16350,
     variants: [
       { id: 'sd-101', name: '6 Tray Steam Dhokla Machine', modelNo: 'SD-101', price: 16350, weight: '43 kg', bodyMaterial: 'SS Body', size: '24 x 24 x 40', gstPercent: 18, description: 'SS steam Dhokala machine is use to make Dhokla, idli khaman etc. Tray Size: 14"x18"x1.25, Aluminium tray.' },
@@ -407,7 +409,7 @@ export const products: Product[] = [
     slug: 'naylon-khaman-machine',
     categoryId: 'steam-khaman',
     description: 'In Khaman Dhokla Machine you can prepare soft and spongy instant dhokla in less than 20 minutes. It is available in 6, 8 & 10 tray.',
-    image: steamDhokla,
+    image: updatedSteamDhokla,
     basePrice: 21600,
     variants: [
       { id: 'sd-105', name: '6 Plate Naylon Khaman Machine', modelNo: 'SD-105', price: 21600, weight: '56 kg', bodyMaterial: 'SS Body', size: '28 x 24 x 52', gstPercent: 18, description: 'In Khaman Dhokla Machine you can prepare soft and spongy instant dhokla in less than 20 minutes. Tray Size: 18"x18"x2.5, Aluminium tray.' },
@@ -425,7 +427,7 @@ export const products: Product[] = [
     slug: 'sugarcane-juicer-machine',
     categoryId: 'sugarcane-juicer',
     description: 'Our sugarcane juice machine extracts juice from sugarcane by squeezing it with three SS 304 diamond-cut rollers. It extracts complete juice in a single time and gives you fresh and healthy juice.',
-    image: sugarcaneJuicer,
+    image: updatedSugarcaneJuicer,
     basePrice: 12500,
     variants: [
       { id: 'dsj-01', name: 'Domestic Sugarcane Juicer', modelNo: 'DSJ-01', price: 12500, weight: '18 kg', bodyMaterial: 'SS Body', size: '16 x 17 x 37', capacity: '150 TO 175', motor: '1 hp', gstPercent: 18, description: 'Fully S.S Body, Maintenance-free Gear System, Easy To Wash & Clean.' },
@@ -444,7 +446,7 @@ export const products: Product[] = [
     slug: 'vegetable-chopping-machine',
     categoryId: 'vegetable-chopping',
     description: 'This Vegetable Chopper can cut wide range of vegetables like onion garlic, beans carrot etc. The cut size of vegetables can be adjusted with the help of change parts. It is very suitable for small and medium scale production.',
-    image: vegetableCutter,
+    image: updatedVegetableChopper,
     basePrice: 9350,
     variants: [
       { id: 'cm-01', name: 'Vegetable Chopping Machine', modelNo: 'CM-01', price: 9350, weight: '28 kg', bodyMaterial: 'SS Body', size: '28 x 15 x 21', capacity: '200 KG', motor: '1 hp', gstPercent: 18, description: 'This Vegetable Chopper can cut wide range of vegetables like onion garlic, beans carrot etc. The cut size of vegetables can be adjusted with the help of change parts.' },
@@ -457,7 +459,7 @@ export const products: Product[] = [
     slug: 'vegetable-cutting-machine',
     categoryId: 'vegetable-cutting',
     description: 'The vegetable cutting machine is a multi-function cutter to slice, chop, dice or julienne vegetables and green leafy vegetables. Changeable Blade system for various shapes and sizes.',
-    image: vegetableCutter,
+    image: updatedVegetableCutter,
     basePrice: 7750,
     isNewArrival: true,
     variants: [
@@ -478,7 +480,7 @@ export const products: Product[] = [
     slug: 'potato-slicer-machine',
     categoryId: 'wafer-slicer',
     description: 'Potato Slicer Machine are specially designed for Potato Chips Manufacturing, Restaurant, Hotel, Catering and Food Processing Factory. Potato Slicer Machine is made of Stainless Steel. This Machine is very reliable and easy to operate. The Potato Cutting thickness is adjustable, and also available in three different types of blade finger cutting, lays cutting and slicing blade.',
-    image: waferSlicer,
+    image: updatedPotatoSlicer,
     basePrice: 18450,
     variants: [
       { id: 'psm-101', name: 'Potato Slicer Machine', modelNo: 'PSM-101', price: 18450, weight: '50 kg', bodyMaterial: 'SS Body', size: '20 X 27 X 15', capacity: '200 to 250 Kg', motor: '1 Hp', gstPercent: 18, description: 'Potato Slicer Machine for Potato Chips Manufacturing. Die: 3 Die, Blade Dimension: 4.5 Inch.' },
@@ -491,7 +493,7 @@ export const products: Product[] = [
     slug: 'high-speed-powder-grinder',
     categoryId: 'powder-grinder',
     description: 'Our high speed grinders are designed in such a way that they work at very high speed and is suitable for grinding dry material like spices, herbs etc.',
-    image: powderGrinder,
+    image: updatedPowderGrinder,
     basePrice: 8800,
     variants: [
       { id: 'hspg-102', name: '500 GM High Speed Powder Grinder', modelNo: 'HSPG-102', price: 8800, weight: '5 kg', bodyMaterial: 'SS Body', size: '9 x 14 x 8', capacity: '500 Gm', motor: '2300 W', gstPercent: 18, description: 'Our high speed grinders are designed for grinding dry material like spices, herbs etc.' },
@@ -508,7 +510,7 @@ export const products: Product[] = [
     slug: 'laddu-jamun-ball-making-machine',
     categoryId: 'laddu-jamun',
     description: 'The Laddu Making Machine is useful for making various types of Laddus and sweet balls. The operations are easy to carry out and are hygienically proven.',
-    image: ladduMaker,
+    image: updatedLadduMaker,
     basePrice: 105000,
     variants: [
       { id: 'lmm-01', name: 'Laddu Making Machine (Single Worm Type)', modelNo: 'LMM-01', price: 105000, weight: '157 kg', bodyMaterial: 'SS Body', size: '58 x 26 x 42', capacity: '1200 TO 1500 P/Hr', motor: '1.5 hp', gstPercent: 18, description: 'The Laddu Making Machine is useful for making various types of Laddus and sweet balls. Naylone Worm type.' },
