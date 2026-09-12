@@ -8,7 +8,6 @@ import chapatiBhatti from '@/assets/machines/chapati-bhatti.jpg';
 import doughBall from '@/assets/machines/dough-ball.jpg';
 import dryFruit from '@/assets/machines/dry-fruit.jpg';
 import flourMixer from '@/assets/machines/flour-mixer.jpg';
-import gravyMachine from '@/assets/machines/gravy-machine.jpg';
 import powderGrinder from '@/assets/machines/powder-grinder.jpg';
 import ladduMaker from '@/assets/machines/laddu-maker.jpg';
 import mawaMachine from '@/assets/machines/mawa-machine.jpg';
