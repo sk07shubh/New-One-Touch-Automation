@@ -158,6 +158,14 @@ const ProductDetailPage = () => {
 
       <main>
         <div className="p-4 space-y-4">
+          <div className="aspect-square w-full overflow-hidden rounded-xl border border-border bg-card p-3">
+            <img
+              src={product.image}
+              alt={selectedVariant.name}
+              className="h-full w-full object-contain"
+            />
+          </div>
+
           {/* Title and Wishlist */}
           <div className="flex items-start justify-between gap-4">
             <div>

@@ -16,11 +16,11 @@ const CategoriesPage = () => {
               to={`/category/${category.slug}`}
               className="flex flex-col items-center gap-2 p-3 bg-card rounded-xl border border-border hover:border-primary/50 hover:shadow-md transition-all"
             >
-              <div className="w-16 h-16 rounded-full bg-secondary overflow-hidden">
+              <div className="w-full aspect-square rounded-xl bg-secondary overflow-hidden">
                 <img
                   src={category.image}
                   alt={category.name}
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain p-1"
                 />
               </div>
               <span className="text-xs text-center font-medium text-foreground line-clamp-2 leading-tight">
