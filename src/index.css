@@ -133,7 +133,7 @@
   }
   
   .category-icon {
-    @apply w-14 h-14 rounded-full bg-secondary flex items-center justify-center overflow-hidden;
+    @apply w-16 h-16 rounded-xl bg-secondary flex items-center justify-center overflow-hidden;
   }
   
   .bottom-nav-item {

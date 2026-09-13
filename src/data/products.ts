@@ -23,26 +23,26 @@ import vegetableCutter from '@/assets/machines/vegetable-cutter.jpg';
 import waferSlicer from '@/assets/machines/wafer-slicer.jpg';
 
 // Updated machine photos supplied by the owner
-const updatedBesanMixer = '/__l5e/assets-v1/20176296-5528-42dd-98a2-483e3b40b2cc/besan-mixing-machine.jpg';
-const updatedChapatiBhatti = '/__l5e/assets-v1/a63d9dc4-ea7b-45a4-99dd-43b9b80f229a/chapati-bhatthi.jpg';
-const updatedCoconutScraper = '/__l5e/assets-v1/49feedde-31ad-4218-86b2-8cdc74100671/coconut-scraper.jpg';
-const updatedDoughBall = '/__l5e/assets-v1/1721e0cc-93ed-41a5-b36b-73463cfa2294/dough-ball-machine.jpg';
-const updatedDryFruit = '/__l5e/assets-v1/4f2b854e-5d57-4d86-8dc0-03226160e138/dry-fruit-chips-powder-machine.jpg';
-const updatedDryer = '/__l5e/assets-v1/6432fea1-932a-40af-8e08-2fe59c5ce8ac/dryer-machine.jpg';
-const updatedGarlicPeeler = '/__l5e/assets-v1/99d3d0b5-5fed-46bd-8bb5-118741f880b2/garlic-peeling-machine.jpg';
-const updatedHalwaMachine = '/__l5e/assets-v1/ddef659b-b277-4549-89e9-d926b38c4b5d/halwa-machine.jpg';
-const updatedPowderGrinder = '/__l5e/assets-v1/2a96a7d8-2b1f-4889-9918-ffd7e448d6b1/high-speed-powder-grinder.jpg';
-const updatedLadduMaker = '/__l5e/assets-v1/73208629-58e0-4fd1-9d31-815a115bf2d2/laddu-machine.jpg';
-const updatedNamkeenMaker = '/__l5e/assets-v1/5336171c-c8e7-4bd3-9d7f-dfe6165c9cae/namkeen-making-machine.jpg';
-const updatedNamkeenMixer = '/__l5e/assets-v1/92c91620-cfad-4488-9345-10617b584b4f/namkeen-masala-mixing-machine.jpg';
-const updatedPotatoPeeler = '/__l5e/assets-v1/f550038a-bc1e-4df0-be44-6256848e162f/potato-peeler-machine.jpg';
-const updatedPotatoSlicer = '/__l5e/assets-v1/d522219b-6ccd-4c50-8c08-bc798c5f2c5d/potato-slicer-machine.jpg';
-const updatedRotiMachine = '/__l5e/assets-v1/e9a48d25-9e9d-451d-9bdd-b8e620eed8b8/roti-making-machine.jpg';
-const updatedRotiPress = '/__l5e/assets-v1/85b5e8c0-3f86-4ad3-81fb-78eb59c55897/roti-pressing-machine.jpg';
-const updatedSteamDhokla = '/__l5e/assets-v1/a79922ec-8942-4654-8ae9-17b555903aeb/steam-dhokla-machine.jpg';
-const updatedSugarcaneJuicer = '/__l5e/assets-v1/813bf2a7-0e53-4108-94cb-1f5f98fdc434/sugarcane-juicer-machine.jpg';
-const updatedVegetableChopper = '/__l5e/assets-v1/5830a519-ab13-460f-ae8a-e9f82f43f5c0/vegetable-chopping-machine.jpg';
-const updatedVegetableCutter = '/__l5e/assets-v1/6edd1ba8-edd8-43cd-86be-260c991a5348/vegetable-cutting-machine.jpg';
+const updatedBesanMixer = '/__l5e/assets-v1/ed6150f3-7ec6-4679-950c-58c878149f0c/besan-mixing-machine.jpg';
+const updatedChapatiBhatti = '/__l5e/assets-v1/2a20d51d-5df1-456b-94b7-46c3270c04ae/chapati-bhatthi.jpg';
+const updatedCoconutScraper = '/__l5e/assets-v1/417e4b0f-a1ac-4745-bc2f-6e45965bc38e/coconut-scraper.jpg';
+const updatedDoughBall = '/__l5e/assets-v1/40f72e1a-8135-48cf-a45b-9455f7d430df/dough-ball-machine.jpg';
+const updatedDryFruit = '/__l5e/assets-v1/a6e507f8-83c5-4077-8421-116d22493405/dry-fruit-chips-powder-machine.jpg';
+const updatedDryer = '/__l5e/assets-v1/acc6e00e-40d0-4752-9989-535e1b6b15ab/dryer-machine.jpg';
+const updatedGarlicPeeler = '/__l5e/assets-v1/1c53b799-0f0f-4739-ad1f-3cd4b47809d5/garlic-peeling-machine.jpg';
+const updatedHalwaMachine = '/__l5e/assets-v1/75e64639-f3cc-4778-820f-0fee3a6d3413/halwa-machine.jpg';
+const updatedPowderGrinder = '/__l5e/assets-v1/2d3a327d-8d2c-4a60-a88f-bd5b3fbfcd26/high-speed-powder-grinder.jpg';
+const updatedLadduMaker = '/__l5e/assets-v1/885fe761-6144-4cfd-9952-34a07c0eb177/laddu-machine.jpg';
+const updatedNamkeenMaker = '/__l5e/assets-v1/01b7697f-5085-4052-ab7e-079a8bf60f66/namkeen-making-machine.jpg';
+const updatedNamkeenMixer = '/__l5e/assets-v1/f285d520-3af2-4326-b03e-7d9a3952143a/namkeen-masala-mixing-machine.jpg';
+const updatedPotatoPeeler = '/__l5e/assets-v1/544a5056-3136-40bf-aed8-bded71174b27/potato-peeler-machine.jpg';
+const updatedPotatoSlicer = '/__l5e/assets-v1/1a969942-616b-45bf-9419-b460e8da6565/potato-slicer-machine.jpg';
+const updatedRotiMachine = '/__l5e/assets-v1/37744a7c-9de2-40f8-9cb5-4d8cdc098500/roti-making-machine.jpg';
+const updatedRotiPress = '/__l5e/assets-v1/60036089-1759-4d00-8250-d262f08e93d5/roti-pressing-machine.jpg';
+const updatedSteamDhokla = '/__l5e/assets-v1/8df195e2-56b2-4ff9-8179-0ca7c7f73231/steam-dhokla-machine.jpg';
+const updatedSugarcaneJuicer = '/__l5e/assets-v1/4a17e6cb-d80e-47ab-90b2-67237d140264/sugarcane-juicer-machine.jpg';
+const updatedVegetableChopper = '/__l5e/assets-v1/9da825bd-28dd-416e-b4a7-f7bfe4cba7c4/vegetable-chopping-machine.jpg';
+const updatedVegetableCutter = '/__l5e/assets-v1/172def3d-a209-4a0d-bc67-b82ddc80c78d/vegetable-cutting-machine.jpg';
 
 export const categories: Category[] = [
   { id: 'masala-mixing', name: 'Masala Mixing Machine', slug: 'masala-mixing', image: updatedNamkeenMixer },

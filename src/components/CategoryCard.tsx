@@ -7,15 +7,15 @@ interface CategoryCardProps {
 
 const CategoryCard = ({ category }: CategoryCardProps) => {
   return (
-    <Link to={`/category/${category.slug}`} className="category-chip flex-shrink-0 min-w-[80px]">
+    <Link to={`/category/${category.slug}`} className="category-chip flex-shrink-0 min-w-[88px]">
       <div className="category-icon">
         <img
           src={category.image}
           alt={category.name}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain p-1"
         />
       </div>
-      <span className="text-xs text-center text-foreground font-medium leading-tight line-clamp-2 max-w-[80px]">
+      <span className="text-xs text-center text-foreground font-medium leading-tight line-clamp-2 max-w-[88px]">
         {category.name}
       </span>
     </Link>
