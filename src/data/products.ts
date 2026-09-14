@@ -23,26 +23,26 @@ import vegetableCutter from '@/assets/machines/vegetable-cutter.jpg';
 import waferSlicer from '@/assets/machines/wafer-slicer.jpg';
 
 // Updated machine photos supplied by the owner
-const updatedBesanMixer = '/__l5e/assets-v1/ed6150f3-7ec6-4679-950c-58c878149f0c/besan-mixing-machine.jpg';
-const updatedChapatiBhatti = '/__l5e/assets-v1/2a20d51d-5df1-456b-94b7-46c3270c04ae/chapati-bhatthi.jpg';
-const updatedCoconutScraper = '/__l5e/assets-v1/417e4b0f-a1ac-4745-bc2f-6e45965bc38e/coconut-scraper.jpg';
-const updatedDoughBall = '/__l5e/assets-v1/40f72e1a-8135-48cf-a45b-9455f7d430df/dough-ball-machine.jpg';
-const updatedDryFruit = '/__l5e/assets-v1/a6e507f8-83c5-4077-8421-116d22493405/dry-fruit-chips-powder-machine.jpg';
-const updatedDryer = '/__l5e/assets-v1/acc6e00e-40d0-4752-9989-535e1b6b15ab/dryer-machine.jpg';
-const updatedGarlicPeeler = '/__l5e/assets-v1/1c53b799-0f0f-4739-ad1f-3cd4b47809d5/garlic-peeling-machine.jpg';
-const updatedHalwaMachine = '/__l5e/assets-v1/75e64639-f3cc-4778-820f-0fee3a6d3413/halwa-machine.jpg';
-const updatedPowderGrinder = '/__l5e/assets-v1/2d3a327d-8d2c-4a60-a88f-bd5b3fbfcd26/high-speed-powder-grinder.jpg';
-const updatedLadduMaker = '/__l5e/assets-v1/885fe761-6144-4cfd-9952-34a07c0eb177/laddu-machine.jpg';
-const updatedNamkeenMaker = '/__l5e/assets-v1/01b7697f-5085-4052-ab7e-079a8bf60f66/namkeen-making-machine.jpg';
-const updatedNamkeenMixer = '/__l5e/assets-v1/f285d520-3af2-4326-b03e-7d9a3952143a/namkeen-masala-mixing-machine.jpg';
-const updatedPotatoPeeler = '/__l5e/assets-v1/544a5056-3136-40bf-aed8-bded71174b27/potato-peeler-machine.jpg';
-const updatedPotatoSlicer = '/__l5e/assets-v1/1a969942-616b-45bf-9419-b460e8da6565/potato-slicer-machine.jpg';
-const updatedRotiMachine = '/__l5e/assets-v1/37744a7c-9de2-40f8-9cb5-4d8cdc098500/roti-making-machine.jpg';
-const updatedRotiPress = '/__l5e/assets-v1/60036089-1759-4d00-8250-d262f08e93d5/roti-pressing-machine.jpg';
-const updatedSteamDhokla = '/__l5e/assets-v1/8df195e2-56b2-4ff9-8179-0ca7c7f73231/steam-dhokla-machine.jpg';
-const updatedSugarcaneJuicer = '/__l5e/assets-v1/4a17e6cb-d80e-47ab-90b2-67237d140264/sugarcane-juicer-machine.jpg';
-const updatedVegetableChopper = '/__l5e/assets-v1/9da825bd-28dd-416e-b4a7-f7bfe4cba7c4/vegetable-chopping-machine.jpg';
-const updatedVegetableCutter = '/__l5e/assets-v1/172def3d-a209-4a0d-bc67-b82ddc80c78d/vegetable-cutting-machine.jpg';
+import updatedBesanMixer from '@/assets/machines/final/besan-mixing-machine.jpg';
+import updatedChapatiBhatti from '@/assets/machines/final/chapati-bhatthi.jpg';
+import updatedCoconutScraper from '@/assets/machines/final/coconut-scraper.jpg';
+import updatedDoughBall from '@/assets/machines/final/dough-ball-machine.jpg';
+import updatedDryFruit from '@/assets/machines/final/dry-fruit-chips-powder-machine.jpg';
+import updatedDryer from '@/assets/machines/final/dryer-machine.jpg';
+import updatedGarlicPeeler from '@/assets/machines/final/garlic-peeling-machine.jpg';
+import updatedHalwaMachine from '@/assets/machines/final/halwa-machine.jpg';
+import updatedPowderGrinder from '@/assets/machines/final/high-speed-powder-grinder.jpg';
+import updatedLadduMaker from '@/assets/machines/final/laddu-machine.jpg';
+import updatedNamkeenMaker from '@/assets/machines/final/namkeen-making-machine.jpg';
+import updatedNamkeenMixer from '@/assets/machines/final/namkeen-masala-mixing-machine.jpg';
+import updatedPotatoPeeler from '@/assets/machines/final/potato-peeler-machine.jpg';
+import updatedPotatoSlicer from '@/assets/machines/final/potato-slicer-machine.jpg';
+import updatedRotiMachine from '@/assets/machines/final/roti-making-machine.jpg';
+import updatedRotiPress from '@/assets/machines/final/roti-pressing-machine.jpg';
+import updatedSteamDhokla from '@/assets/machines/final/steam-dhokla-machine.jpg';
+import updatedSugarcaneJuicer from '@/assets/machines/final/sugarcane-juicer-machine.jpg';
+import updatedVegetableChopper from '@/assets/machines/final/vegetable-chopping-machine.jpg';
+import updatedVegetableCutter from '@/assets/machines/final/vegetable-cutting-machine.jpg';
 
 export const categories: Category[] = [
   { id: 'masala-mixing', name: 'Masala Mixing Machine', slug: 'masala-mixing', image: updatedNamkeenMixer },
