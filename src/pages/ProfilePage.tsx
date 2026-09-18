@@ -6,7 +6,7 @@
  import { useToast } from '@/hooks/use-toast';
  import logo from '@/assets/logo.png';
  import {
-   MapPin, CreditCard, DollarSign, Heart, Package, FileText,
+    MapPin, CreditCard, Heart, Package, FileText,
    Phone, Info, ClipboardList, Lock, LogOut, Trash2, ChevronRight, Check
  } from 'lucide-react';
  
@@ -70,7 +70,7 @@
                <span className="text-4xl">👤</span>
              </div>
              <h2 className="text-lg font-semibold text-foreground mb-2">Sign in to your account</h2>
-             <p className="text-muted-foreground text-sm mb-6">Access your orders, wishlist, and more</p>
+              <p className="text-muted-foreground text-sm mb-6">Access your wishlist and more</p>
              <Link
                to="/auth"
                className="bg-primary text-primary-foreground px-6 py-2.5 rounded-lg font-medium hover:bg-primary/90 transition-colors"
@@ -156,15 +156,6 @@
                    <CreditCard className="w-5 h-5 text-warning" />
                  </div>
                  <span className="text-foreground">Payment Methods</span>
-               </div>
-               <ChevronRight className="w-5 h-5 text-muted-foreground" />
-             </Link>
-             <Link to="/profile/pricelist" className="flex items-center justify-between px-4 py-3 hover:bg-secondary/50 transition-colors">
-               <div className="flex items-center gap-3">
-                 <div className="w-10 h-10 rounded-full bg-warning/10 flex items-center justify-center">
-                   <DollarSign className="w-5 h-5 text-warning" />
-                 </div>
-                 <span className="text-foreground">Price List</span>
                </div>
                <ChevronRight className="w-5 h-5 text-muted-foreground" />
              </Link>

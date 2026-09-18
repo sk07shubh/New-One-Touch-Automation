@@ -180,14 +180,6 @@
     @apply text-foreground text-sm font-medium text-right;
   }
   
-  .price-display {
-    @apply text-lg font-bold text-foreground;
-  }
-  
-  .gst-text {
-    @apply text-sm text-muted-foreground;
-  }
-  
   .badge-tag {
     @apply px-2.5 py-1 rounded-full bg-primary/10 text-primary text-xs font-medium;
   }

@@ -10,11 +10,9 @@ import CategoryPage from "./pages/CategoryPage";
 import ProductDetailPage from "./pages/ProductDetailPage";
 import CartPage from "./pages/CartPage";
 import CategoriesPage from "./pages/CategoriesPage";
-import OrdersPage from "./pages/OrdersPage";
 import ProfilePage from "./pages/ProfilePage";
 import ProductsPage from "./pages/ProductsPage";
 import AuthPage from "./pages/AuthPage";
-import OrderDetailPage from "./pages/OrderDetailPage";
 import AddressesPage from "./pages/profile/AddressesPage";
 import PaymentPage from "./pages/profile/PaymentPage";
 import WishlistPage from "./pages/profile/WishlistPage";
@@ -23,7 +21,6 @@ import AboutPage from "./pages/profile/AboutPage";
 import TermsPage from "./pages/profile/TermsPage";
 import PrivacyPage from "./pages/profile/PrivacyPage";
 import CataloguePage from "./pages/profile/CataloguePage";
-import PriceListPage from "./pages/profile/PriceListPage";
 import EditProfilePage from "./pages/profile/EditProfilePage";
 import NotFound from "./pages/NotFound";
 
@@ -47,8 +44,6 @@ const App = () => (
                   <Route path="/product/:slug" element={<ProductDetailPage />} />
                   <Route path="/products" element={<ProductsPage />} />
                   <Route path="/cart" element={<CartPage />} />
-                  <Route path="/orders" element={<OrdersPage />} />
-                  <Route path="/order/:id" element={<OrderDetailPage />} />
                   <Route path="/profile" element={<ProfilePage />} />
                   <Route path="/profile/edit" element={<EditProfilePage />} />
                   <Route path="/profile/addresses" element={<AddressesPage />} />
@@ -59,7 +54,6 @@ const App = () => (
                   <Route path="/profile/terms" element={<TermsPage />} />
                   <Route path="/profile/privacy" element={<PrivacyPage />} />
                   <Route path="/profile/catalogue" element={<CataloguePage />} />
-                  <Route path="/profile/pricelist" element={<PriceListPage />} />
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>

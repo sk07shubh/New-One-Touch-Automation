@@ -2,15 +2,13 @@ import PageHeader from '@/components/PageHeader';
 import BottomNavigation from '@/components/BottomNavigation';
 import CartItemCard from '@/components/CartItemCard';
 import { useCart } from '@/contexts/CartContext';
-import { ShoppingCart } from 'lucide-react';
+import { MessageCircle, ShoppingCart } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import WhatsAppIcon from '@/components/WhatsAppIcon';
+import { getWhatsAppCartUrl } from '@/lib/whatsapp';
 
 const CartPage = () => {
-  const { items, getCartTotal, clearCart } = useCart();
-
-  const total = getCartTotal();
-  const gstAmount = total * 0.18 / 1.18; // Extract GST from total
-  const subtotal = total - gstAmount;
+  const { items, clearCart } = useCart();
 
   return (
     <div className="min-h-screen bg-background pb-40">
@@ -54,21 +52,19 @@ const CartPage = () => {
       {items.length > 0 && (
         <div className="fixed bottom-16 left-0 right-0 bg-card border-t border-border p-4 z-40">
           <div className="max-w-lg mx-auto space-y-3">
-            <div className="flex justify-between text-sm">
-              <span className="text-muted-foreground">Subtotal</span>
-              <span className="font-medium">₹{subtotal.toLocaleString('en-IN', { maximumFractionDigits: 0 })}</span>
+            <div className="flex items-center gap-3 border-t border-border pt-3">
+              <MessageCircle className="w-5 h-5 text-success flex-shrink-0" />
+              <p className="text-sm text-muted-foreground">Send your machine list to the owner for availability and a quotation.</p>
             </div>
-            <div className="flex justify-between text-sm">
-              <span className="text-muted-foreground">GST (18%)</span>
-              <span className="font-medium">₹{gstAmount.toLocaleString('en-IN', { maximumFractionDigits: 0 })}</span>
-            </div>
-            <div className="flex justify-between pt-2 border-t border-border">
-              <span className="font-semibold">Total</span>
-              <span className="price-display">₹{total.toLocaleString('en-IN', { maximumFractionDigits: 0 })}</span>
-            </div>
-            <button className="w-full bg-primary text-primary-foreground py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors">
-              Proceed to Checkout
-            </button>
+            <a
+              href={getWhatsAppCartUrl(items)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full bg-success text-success-foreground py-3 rounded-lg font-semibold hover:bg-success/90 transition-colors inline-flex items-center justify-center gap-2"
+            >
+              <WhatsAppIcon className="w-5 h-5" />
+              Send Enquiry on WhatsApp
+            </a>
           </div>
         </div>
       )}
