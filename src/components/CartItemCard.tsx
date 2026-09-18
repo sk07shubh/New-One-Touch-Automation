@@ -9,9 +9,6 @@ interface CartItemProps {
 const CartItemCard = ({ item }: CartItemProps) => {
   const { updateQuantity, removeFromCart } = useCart();
 
-  const priceWithGst = item.variant.price * (1 + item.variant.gstPercent / 100);
-  const totalPrice = priceWithGst * item.quantity;
-
   return (
     <div className="product-card p-4 flex gap-4 animate-fade-in">
       <div className="w-20 h-20 bg-secondary/30 rounded-lg overflow-hidden flex-shrink-0">
@@ -47,9 +44,6 @@ const CartItemCard = ({ item }: CartItemProps) => {
             <Trash2 className="w-4 h-4" />
           </button>
         </div>
-        <p className="text-sm font-semibold text-foreground mt-2">
-          ₹{totalPrice.toLocaleString('en-IN', { maximumFractionDigits: 0 })}
-        </p>
       </div>
     </div>
   );

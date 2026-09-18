@@ -1,14 +1,13 @@
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
-import { Heart, Minus, Plus } from 'lucide-react';
+import { Heart, Minus, Plus, ShoppingCart } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import BottomNavigation from '@/components/BottomNavigation';
 import { getProductBySlug, getCategoryBySlug, categories } from '@/data/products';
 import { useCart } from '@/contexts/CartContext';
 import { toast } from 'sonner';
 import { ProductVariant } from '@/types/product';
-import WhatsAppIcon from '@/components/WhatsAppIcon';
 
 const ProductDetailPage = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -132,13 +131,11 @@ const ProductDetailPage = () => {
     image: product.image,
     sku: selectedVariant.modelNo,
     brand: { "@type": "Brand", name: "New One Touch" },
-    offers: {
-      "@type": "Offer",
-      price: selectedVariant.price,
-      priceCurrency: "INR",
-      availability: "https://schema.org/InStock",
-      url: `https://automation-genius-shop.lovable.app${canonical}`,
-    },
+     offers: {
+       "@type": "Offer",
+       availability: "https://schema.org/InStock",
+       url: `https://automation-genius-shop.lovable.app${canonical}`,
+     },
   };
 
   return (
@@ -180,26 +177,6 @@ const ProductDetailPage = () => {
                 className={`w-6 h-6 ${isFavorite ? 'fill-destructive text-destructive' : 'text-muted-foreground'}`}
               />
             </button>
-          </div>
-
-          {/* Price */}
-          <div className="flex items-center gap-3 flex-wrap">
-            <span className="price-display">
-              ₹{selectedVariant.price.toLocaleString('en-IN')}
-            </span>
-            {selectedVariant.mrp && selectedVariant.mrp > selectedVariant.price && (
-              <span className="text-muted-foreground line-through text-sm">₹{selectedVariant.mrp.toLocaleString('en-IN')}</span>
-            )}
-            <span className="gst-text">GST: {selectedVariant.gstPercent}%</span>
-            <a
-              href={`https://wa.me/919922051400?text=${encodeURIComponent(`Hi, I'm interested in ${selectedVariant.name} (${selectedVariant.modelNo}) - ₹${selectedVariant.price.toLocaleString('en-IN')}`)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-[#25D366] text-white px-4 py-2 rounded-lg font-medium hover:bg-[#20bd5a] transition-colors"
-            >
-              <WhatsAppIcon className="w-4 h-4" />
-              WhatsApp
-            </a>
           </div>
 
           {/* Quantity */}
@@ -266,21 +243,28 @@ const ProductDetailPage = () => {
         </div>
       </main>
 
-      {/* Fixed Bottom Bar */}
+       {/* Fixed Bottom Bar */}
       <div className="fixed bottom-16 left-0 right-0 bg-card border-t border-border p-4 z-40">
         <div className="max-w-lg mx-auto flex items-center justify-between">
-          <div>
-            <p className="price-display">
-              ₹{selectedVariant.price.toLocaleString('en-IN')}
-            </p>
-            <p className="text-xs text-muted-foreground">Qty. {quantity}</p>
+           <div className="text-sm text-muted-foreground">
+             <p>Quantity</p>
+             <p className="font-semibold text-foreground">{quantity}</p>
           </div>
-          <button
-            onClick={handleAddToCart}
-            className="bg-primary text-primary-foreground px-8 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
-          >
-            Add to cart
-          </button>
+           <div className="flex items-center gap-2">
+             <Link
+               to="/cart"
+               className="inline-flex items-center gap-2 border border-primary text-primary px-4 py-3 rounded-lg font-semibold hover:bg-primary/5 transition-colors"
+             >
+               <ShoppingCart className="w-4 h-4" />
+               Cart
+             </Link>
+             <button
+               onClick={handleAddToCart}
+               className="bg-primary text-primary-foreground px-5 py-3 rounded-lg font-semibold hover:bg-primary/90 transition-colors"
+             >
+               Add to cart
+             </button>
+           </div>
         </div>
       </div>
 

@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Home, ShoppingCart, ClipboardList, User } from 'lucide-react';
+import { Home, ShoppingCart, User } from 'lucide-react';
 import { useCart } from '@/contexts/CartContext';
 
 const BottomNavigation = () => {
@@ -10,7 +10,6 @@ const BottomNavigation = () => {
   const navItems = [
     { path: '/', icon: Home, label: 'Home' },
     { path: '/cart', icon: ShoppingCart, label: 'Cart', badge: cartCount },
-    { path: '/orders', icon: ClipboardList, label: 'Orders' },
     { path: '/profile', icon: User, label: 'Profile' },
   ];
 

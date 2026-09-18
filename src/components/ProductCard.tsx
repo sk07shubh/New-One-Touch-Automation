@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Heart, Minus, Plus } from 'lucide-react';
 import { Product } from '@/types/product';
-import WhatsAppIcon from '@/components/WhatsAppIcon';
 import { useCart } from '@/contexts/CartContext';
 import { toast } from 'sonner';
 
@@ -17,9 +16,6 @@ const ProductCard = ({ product, showVariantSelector = false }: ProductCardProps)
   const { addToCart } = useCart();
 
   const defaultVariant = product.variants[0];
-  const priceDisplay = `₹${defaultVariant.price.toLocaleString('en-IN')}`;
-  const gstText = `+ ${defaultVariant.gstPercent}% GST`;
-
   const handleAddToCart = (e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
@@ -61,24 +57,7 @@ const ProductCard = ({ product, showVariantSelector = false }: ProductCardProps)
         <h3 className="font-medium text-foreground text-sm leading-tight line-clamp-2 mb-2 min-h-[40px]">
           {product.name}
         </h3>
-        <div className="flex items-center justify-between gap-2">
-          <div className="flex items-baseline gap-2">
-            <p className="text-sm font-semibold text-foreground">{priceDisplay}</p>
-            {defaultVariant.mrp && defaultVariant.mrp > defaultVariant.price && (
-              <p className="text-xs text-muted-foreground line-through">₹{defaultVariant.mrp.toLocaleString('en-IN')}</p>
-            )}
-          </div>
-          <a
-            href={`https://wa.me/919922051400?text=${encodeURIComponent(`Hi, I'm interested in ${product.name} (${defaultVariant.modelNo}) - ₹${defaultVariant.price.toLocaleString('en-IN')}`)}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={(e) => e.stopPropagation()}
-            className="w-8 h-8 bg-[#25D366] rounded-full flex items-center justify-center hover:bg-[#20bd5a] transition-colors flex-shrink-0"
-          >
-            <WhatsAppIcon className="w-4 h-4 text-white" />
-          </a>
-        </div>
-        <p className="text-xs text-muted-foreground">{gstText}</p>
+        <p className="text-xs text-muted-foreground">Model: {defaultVariant.modelNo}</p>
         <div className="flex items-center gap-2 mt-3">
           <div className="flex items-center gap-1">
             <button
